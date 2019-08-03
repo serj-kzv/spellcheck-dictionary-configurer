@@ -1,1 +1,1 @@
-# spellcheck-configurer
+# spellcheck-dictionary-configurer
