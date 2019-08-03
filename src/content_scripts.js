@@ -39,12 +39,12 @@ const onNodeIsAdded = (cfg, callbackFn) => onNodeIs(cfg, callbackFn, ['addedNode
 const nonSpellcheckedTxtNodeFinder = callbackFn => {
     return onNodeIsAdded(
         {attributeFilter: ['spellcheck', 'contenteditable'], childList: true, subtree: true},
-        addedNode => {
-            if ((addedNode instanceof HTMLInputElement
-                || addedNode instanceof HTMLTextAreaElement
-                || (addedNode instanceof HTMLElement && addedNode.isContentEditable && !addedNode.spellcheck))
-                && isVisibleNode(addedNode)) {
-                callbackFn(addedNode);
+        node => {
+            if ((node instanceof HTMLInputElement
+                || node instanceof HTMLTextAreaElement
+                || (node instanceof HTMLElement && node.isContentEditable && !node.spellcheck))
+                && isVisibleNode(node)) {
+                callbackFn(node);
             }
         });
 };
