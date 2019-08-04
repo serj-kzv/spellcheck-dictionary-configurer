@@ -1,0 +1,32 @@
+{
+  "default": {
+    "spellchecker": {
+      "forceActivation": {
+        "isOn": true,
+        "elements": {
+          "invisible": true,
+          "input": true,
+          "textarea": true,
+          "contentEditable": true
+        }
+      },
+      "forceLang": "ru-EN"
+    }
+  },
+  "global": {
+    "spellchecker": {
+      "forceActivation": {
+        "isOn": true,
+        "elements": {
+          "invisible": true,
+          "input": true,
+          "textarea": true,
+          "contentEditable": true
+        }
+      },
+      "forceLang": "ru-EN"
+    }
+  },
+  "locals": [
+  ]
+}
