@@ -19,7 +19,14 @@
       "run_at": "document_start"
     }
   ],
+  "background": {
+    "scripts": [
+      "/background/main.js"
+    ]
+  },
   "permissions": [
-    "<all_urls>"
+    "<all_urls>",
+    "storage",
+    "unlimitedStorage"
   ]
 }

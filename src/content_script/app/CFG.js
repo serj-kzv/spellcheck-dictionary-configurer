@@ -1,5 +1,10 @@
-import OptHelperImpl from "./OptHelperImpl.js";
+const port = browser.runtime.connect({name: "cfg-port"});
+let CFG;
 
-const CFG = new OptHelperImpl();
+port.onMessage.addListener(cfg => {
+    console.log('In content script, received message from background script: ', cfg);
+    CFG = cfg;
+});
+port.postMessage({cmd: 'give-me-a-cfg'});
 
 export default CFG;

@@ -1,16 +1,24 @@
 export default class OptHelperBase {
     constructor(storageType = 'local', name = 'options') {
+        console.debug('init OptHelperBase constructor');
         this.name = name;
         this.storage = OptHelperBase.getStorageByType(storageType);
+        console.debug('init OptHelperBase constructor is finished');
     }
 
     static getStorageByType(storageType) {
+        console.debug('getStorageByType, browser.storage is ', browser.storage);
         switch (true) {
             case typeof browser === 'undefined': {
+                console.debug('getStorageByType, storageType is ', storageType);
                 return localStorage;
             }
             case storageType === 'local': {
+                console.debug('getStorageByType, storageType is ', storageType);
                 return browser.storage.local;
+            }
+            default : {
+                console.debug('An error in getStorageByType');
             }
         }
     }

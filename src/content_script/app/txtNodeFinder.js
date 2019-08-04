@@ -1,21 +1,12 @@
-import isVisibleNode from "../util/isVisibleNode.js";
-import onNodeIsAdded from "../util/onNodeIs/onNodeIsAdded.js";
+import onNodeIsAdded from "../lib/onNodeIs/onNodeIsAdded.js";
 
-const txtNodeFinder = callbackFn => {
+const txtNodeFinder = asyncCallbackFn => {
+    console.debug('txtNodeFinder callback will be called');
+
     return onNodeIsAdded(
         {attributeFilter: ['spellcheck', 'contenteditable'], childList: true, subtree: true},
-        node => {
-            const curElements = CFG.global.forceActivation.elements;
-            const checkInput = curElements.input && node instanceof HTMLInputElement;
-            const checkTextarea = curElements.textarea && node instanceof HTMLTextAreaElement;
-            const checkContentEditable = curElements.contentEditable && node instanceof HTMLElement
-                && node.isContentEditable;
-            const checkInvisible = !curElements.invisible || isVisibleNode(node);
-
-            if ((checkInput || checkTextarea || checkContentEditable) && checkInvisible) {
-                callbackFn(node);
-            }
-        });
+        node => asyncCallbackFn(node)
+    );
 };
 
 export default txtNodeFinder;

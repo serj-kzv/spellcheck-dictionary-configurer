@@ -1,19 +1,19 @@
 import isSearchableNode from "./isSearchableNode.js";
 
-const onNodeIs = (cfg, callbackFn, nodeStorageNames, advancePredicate = node => true) => {
+const onNodeIs = (cfg, asyncCallbackFn, nodeStorageNames, advancePredicate = node => true) => {
     const observer = new MutationObserver(mutations => {
-        const callbackFnWrapper = node => {
+        const asyncCallbackFnWrapper = async node => {
             if (advancePredicate(node)) {
-                callbackFn(node);
+                await asyncCallbackFn(node);
             }
         };
 
         mutations.forEach(mutation => {
             nodeStorageNames.forEach(nodeStorageName => {
                 mutation[nodeStorageName].forEach(node => {
-                    callbackFnWrapper(node);
+                    asyncCallbackFnWrapper(node);
                     if (isSearchableNode(node)) {
-                        node.querySelectorAll('*').forEach(node => callbackFnWrapper(node));
+                        node.querySelectorAll('*').forEach(node => asyncCallbackFnWrapper(node));
                     }
                 });
             });
