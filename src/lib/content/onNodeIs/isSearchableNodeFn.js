@@ -1,4 +1,4 @@
-const isSearchableNode = node => {
+const isSearchableNodeFn = node => {
     const type = node.nodeType;
 
     return node.childNodes.length > 0 &&
@@ -6,4 +6,4 @@ const isSearchableNode = node => {
             || node.querySelectorAll);
 };
 
-export default isSearchableNode;
+export default isSearchableNodeFn;

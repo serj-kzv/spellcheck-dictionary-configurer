@@ -1,5 +1,5 @@
-const isVisibleNode = node => {
+const isVisibleNodeFn = node => {
     return !!(node.offsetWidth || node.offsetHeight || node.getClientRects().length);
 };
 
-export default isVisibleNode;
+export default isVisibleNodeFn;

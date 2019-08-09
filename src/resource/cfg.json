@@ -1,32 +1,41 @@
 {
   "default": {
-    "spellchecker": {
-      "forceActivation": {
-        "isOn": true,
-        "elements": {
-          "invisible": true,
-          "input": true,
-          "textarea": true,
-          "contentEditable": true
+    "isOn": true,
+    "href": null,
+    "hostname": null,
+    "elementMutatorCfg": {
+      "mutators": [
+        {
+          "attrs": [
+            {
+              "name": "spellcheck",
+              "value": "true"
+            },
+            {
+              "name": "lang",
+              "value": "ru-EN"
+            },
+            {
+              "name": "contenteditable"
+            }
+          ],
+          "targets": [
+            {
+              "selector": "input",
+              "proceedInvisible": true
+            },
+            {
+              "selector": "textarea",
+              "proceedInvisible": true
+            },
+            {
+              "selector": "[contenteditable=\"true\"]",
+              "proceedInvisible": true
+            }
+          ]
         }
-      },
-      "forceLang": "ru-EN"
+      ]
     }
   },
-  "global": {
-    "spellchecker": {
-      "forceActivation": {
-        "isOn": true,
-        "elements": {
-          "invisible": true,
-          "input": true,
-          "textarea": true,
-          "contentEditable": true
-        }
-      },
-      "forceLang": "ru-EN"
-    }
-  },
-  "locals": [
-  ]
+  "specificElementMutatorCfgs": []
 }

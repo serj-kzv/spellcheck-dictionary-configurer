@@ -23,14 +23,18 @@ export default class OptHelperBase {
         }
     }
 
-    async readOptions() {
+    async hasOptions() {
         const stored = await this.storage.get(this.name);
 
         if (typeof stored.options !== 'undefined') {
             return stored.options;
         }
 
-        return await this.saveOptions({});
+        return false;
+    }
+
+    readOptions() {
+        return this.storage.get(this.name);
     }
 
     async saveOptions(options) {

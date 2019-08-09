@@ -1,26 +1,14 @@
-import OptHelperImpl from "./OptHelperImpl.js";
+import OptHelperImpl from "../../lib/background/OptHelper/OptHelperImpl.js";
 
 const app = async () => {
     console.debug('app is started');
 
-    const optHelper = new OptHelperImpl();
+    const optHelperImpl = await OptHelperImpl.build();
 
-    console.debug('optHelper', optHelper);
+    console.debug('optHelperImpl is created and connected to content js:', optHelperImpl);
 
-    const cfg = await optHelper.read();
-
-    console.debug('cfg', cfg);
-
-    browser.runtime.onConnect.addListener(port => {
-        if (port.name === 'cfg-port') {
-            port.onMessage.addListener(msg => {
-                if (msg.cmd === 'give-me-a-cfg') {
-                    console.debug('cfg will be sent ', cfg);
-                    port.postMessage(cfg);
-                }
-            });
-        }
-    });
+    await optHelperImpl.save(optHelperImpl.cfg);
+    browser.browserAction.onClicked.addListener(() => browser.runtime.openOptionsPage());
 
     console.debug('app is ended');
 };

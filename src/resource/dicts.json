@@ -1,0 +1,2536 @@
+{
+  "abuse": {
+    "bySlug": {},
+    "loading": false
+  },
+  "addons": {
+    "byID": {},
+    "byGUID": {},
+    "bySlug": {},
+    "infoBySlug": {},
+    "loadingBySlug": {}
+  },
+  "addonsByAuthors": {
+    "byAddonId": {},
+    "byAddonSlug": {},
+    "byAuthorId": {},
+    "countFor": {},
+    "loadingFor": {}
+  },
+  "api": {
+    "clientApp": "firefox",
+    "lang": "ru",
+    "requestId": "911a0f91-5365-4c7b-b2db-4ee686baae57",
+    "token": null,
+    "userAgent": "Mozilla\u002F5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko\u002F20100101 Firefox\u002F69.0",
+    "userAgentInfo": {
+      "browser": {
+        "name": "Firefox",
+        "version": "69.0",
+        "major": "69"
+      },
+      "os": {
+        "name": "Windows",
+        "version": "10"
+      }
+    }
+  },
+  "autocomplete": {
+    "loading": false,
+    "suggestions": []
+  },
+  "categories": {
+    "categories": null,
+    "loading": false
+  },
+  "collections": {
+    "byId": {},
+    "bySlug": {},
+    "current": {
+      "id": null,
+      "loading": false
+    },
+    "userCollections": {},
+    "addonInCollections": {},
+    "isCollectionBeingModified": false,
+    "hasAddonBeenAdded": false,
+    "hasAddonBeenRemoved": false,
+    "editingCollectionDetails": false
+  },
+  "errors": {
+    "LanguageTools-3onycv1t4": null
+  },
+  "errorPage": {
+    "clearOnNext": true,
+    "error": null,
+    "hasError": false,
+    "statusCode": null
+  },
+  "formOverlay": {},
+  "heroBanners": {},
+  "home": {
+    "collections": [],
+    "resultsLoaded": false,
+    "shelves": {}
+  },
+  "guides": {
+    "guidsBySlug": {},
+    "loading": false
+  },
+  "infoDialog": {
+    "data": null,
+    "show": false
+  },
+  "installations": {},
+  "landing": {
+    "addonType": null,
+    "category": null,
+    "recommended": {
+      "count": 0,
+      "results": []
+    },
+    "highlyRated": {
+      "count": 0,
+      "results": []
+    },
+    "loading": false,
+    "trending": {
+      "count": 0,
+      "results": []
+    },
+    "resultsLoaded": false
+  },
+  "languageTools": {
+    "byID": {
+      "3046": {
+        "id": 3046,
+        "default_locale": "sl",
+        "guid": "sl@dictionaries.addons.mozilla.org",
+        "name": "Slovar za slovenski jezik",
+        "slug": "slovar-za-slovenski-jezik",
+        "target_locale": "sl",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fslovar-za-slovenski-jezik\u002F"
+      },
+      "3049": {
+        "id": 3049,
+        "default_locale": "de",
+        "guid": "de-CH@dictionaries.addons.mozilla.org",
+        "name": "Deutsches Wörterbuch (Schweiz)",
+        "slug": "german-dictionary-switzerland",
+        "target_locale": "de-CH",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgerman-dictionary-switzerland\u002F"
+      },
+      "3052": {
+        "id": 3052,
+        "default_locale": "pl",
+        "guid": "pl@dictionaries.addons.mozilla.org",
+        "name": "Polski slownik poprawnej pisowni",
+        "slug": "polish-spellchecker-dictionary",
+        "target_locale": "pl",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fpolish-spellchecker-dictionary\u002F"
+      },
+      "3053": {
+        "id": 3053,
+        "default_locale": "en-US",
+        "guid": "it-IT@dictionaries.addons.mozilla.org",
+        "name": "Dizionario italiano",
+        "slug": "dizionario-italiano",
+        "target_locale": "it",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdizionario-italiano\u002F"
+      },
+      "3059": {
+        "id": 3059,
+        "default_locale": "es",
+        "guid": "es-AR@dictionaries.addons.mozilla.org",
+        "name": "Diccionario español Argentina",
+        "slug": "diccionario-español-argentina",
+        "target_locale": "es-AR",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdiccionario-espa%C3%B1ol-argentina\u002F"
+      },
+      "3077": {
+        "id": 3077,
+        "default_locale": "de",
+        "guid": "de-DE@dictionaries.addons.mozilla.org",
+        "name": "Deutsches Wörterbuch",
+        "slug": "german-dictionary",
+        "target_locale": "de-DE",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgerman-dictionary\u002F"
+      },
+      "3079": {
+        "id": 3079,
+        "default_locale": "de",
+        "guid": "de-AT@dictionaries.addons.mozilla.org",
+        "name": "Deutsches Wörterbuch, erweitert für Österreich",
+        "slug": "german-dictionary-extended-for",
+        "target_locale": "de-AT",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgerman-dictionary-extended-for\u002F"
+      },
+      "3090": {
+        "id": 3090,
+        "default_locale": "ga-IE",
+        "guid": "ga-IE@dictionaries.addons.mozilla.org",
+        "name": "Litreoir GaelSpell do Mhozilla",
+        "slug": "litreoir-gaelspell-do-mhozilla",
+        "target_locale": "ga-IE",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flitreoir-gaelspell-do-mhozilla\u002F"
+      },
+      "3099": {
+        "id": 3099,
+        "default_locale": "en-US",
+        "guid": "en-AU@dictionaries.addons.mozilla.org",
+        "name": "English (Australian) Dictionary",
+        "slug": "english-australian-dictionary",
+        "target_locale": "en-AU",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fenglish-australian-dictionary\u002F"
+      },
+      "3155": {
+        "id": 3155,
+        "default_locale": "pt-PT",
+        "guid": "pt-PT@dictionaries.addons.mozilla.org",
+        "name": "Corretor para Português de Portugal",
+        "slug": "european-portuguese-spellcheck",
+        "target_locale": "pt-PT",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Feuropean-portuguese-spellcheck\u002F"
+      },
+      "3257": {
+        "id": 3257,
+        "default_locale": "en-US",
+        "guid": "pt-BR@dictionaries.addons.mozilla.org",
+        "name": "Brazilian Portuguese Dictionary (New Spelling)",
+        "slug": "corretor",
+        "target_locale": "pt-BR",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcorretor\u002F"
+      },
+      "3291": {
+        "id": 3291,
+        "default_locale": "nl",
+        "guid": "nl-NL@dictionaries.addons.mozilla.org",
+        "name": "Woordenboek Nederlands",
+        "slug": "woordenboek-nederlands",
+        "target_locale": "nl",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fwoordenboek-nederlands\u002F"
+      },
+      "3369": {
+        "id": 3369,
+        "default_locale": "ca",
+        "guid": "ca@dictionaries.addons.mozilla.org",
+        "name": "Diccionari català (general)",
+        "slug": "general-catalan-dictionary",
+        "target_locale": "ca",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgeneral-catalan-dictionary\u002F"
+      },
+      "3386": {
+        "id": 3386,
+        "default_locale": "en-US",
+        "guid": "hu@dictionaries.addons.mozilla.org",
+        "name": "Hungarian Dictionary",
+        "slug": "hungarian-dictionary",
+        "target_locale": "hu",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhungarian-dictionary\u002F"
+      },
+      "3394": {
+        "id": 3394,
+        "default_locale": "cs",
+        "guid": "cs@dictionaries.addons.mozilla.org",
+        "name": "Český slovník pro kontrolu pravopisu",
+        "slug": "czech-spell-checking-dictionar",
+        "target_locale": "cs",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fczech-spell-checking-dictionar\u002F"
+      },
+      "3439": {
+        "id": 3439,
+        "default_locale": "el",
+        "guid": "el-GR@dictionaries.addons.mozilla.org",
+        "name": "Greek spellchecking dictionary",
+        "slug": "greek-spellchecking-dictionary",
+        "target_locale": "el",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgreek-spellchecking-dictionary\u002F"
+      },
+      "3451": {
+        "id": 3451,
+        "default_locale": "el",
+        "guid": "el-en@dictionaries.addons.mozilla.org",
+        "name": "English - Greek Spelling dictionary",
+        "slug": "english-greek-spelling-diction",
+        "target_locale": "el-en",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fenglish-greek-spelling-diction\u002F"
+      },
+      "3554": {
+        "id": 3554,
+        "default_locale": "es",
+        "guid": "es-es@dictionaries.addons.mozilla.org",
+        "name": "Diccionario de Español\u002FEspaña",
+        "slug": "diccionario-de-español-españa",
+        "target_locale": "es-ES",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdiccionario-de-espa%C3%B1ol-espa%C3%B1a\u002F"
+      },
+      "3596": {
+        "id": 3596,
+        "default_locale": "da",
+        "guid": "danish@dictionaries.addons.mozilla.org",
+        "name": "Dansk ordbog til stavekontrollen",
+        "slug": "dansk-ordbog",
+        "target_locale": "da",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdansk-ordbog\u002F"
+      },
+      "3623": {
+        "id": 3623,
+        "default_locale": "en-US",
+        "guid": "bg-BG@dictionaries.addons.mozilla.org",
+        "name": "Bulgarian Dictionary",
+        "slug": "bulgarian-dictionary",
+        "target_locale": "bg",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbulgarian-dictionary\u002F"
+      },
+      "3643": {
+        "id": 3643,
+        "default_locale": "en-US",
+        "guid": "is@dictionaries.addons.mozilla.org",
+        "name": "Icelandic Dictionary",
+        "slug": "icelandic-dictionary",
+        "target_locale": "is",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ficelandic-dictionary\u002F"
+      },
+      "3646": {
+        "id": 3646,
+        "default_locale": "en-US",
+        "guid": "he@dictionaries.addons.mozilla.org",
+        "name": "Hebrew spell-checking dictionary (from HSpell)",
+        "slug": "hebrew-spell-checking-dictiona",
+        "target_locale": "he",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhebrew-spell-checking-dictiona\u002F"
+      },
+      "3653": {
+        "id": 3653,
+        "default_locale": "en-US",
+        "guid": "en-CA@dictionaries.addons.mozilla.org",
+        "name": "Canadian English Dictionary",
+        "slug": "canadian-english-dictionary",
+        "target_locale": "en-CA",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcanadian-english-dictionary\u002F"
+      },
+      "3677": {
+        "id": 3677,
+        "default_locale": "en-US",
+        "guid": "ar@dictionaries.addons.mozilla.org",
+        "name": "Arabic spell-checking dictionary",
+        "slug": "arabic-spell-checking-dictiona",
+        "target_locale": "ar",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Farabic-spell-checking-dictiona\u002F"
+      },
+      "3684": {
+        "id": 3684,
+        "default_locale": "en-US",
+        "guid": "eo-EO@dictionaries.addons.mozilla.org",
+        "name": "Esperanta Vortaro",
+        "slug": "esperanta-vortaro",
+        "target_locale": "eo",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fesperanta-vortaro\u002F"
+      },
+      "3703": {
+        "id": 3703,
+        "default_locale": "ru",
+        "guid": "ru@dictionaries.addons.mozilla.org",
+        "name": "Русский словарь проверки орфографии",
+        "slug": "russian-spellchecking-dic-3703",
+        "target_locale": "ru",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Frussian-spellchecking-dic-3703\u002F"
+      },
+      "3716": {
+        "id": 3716,
+        "default_locale": "en-US",
+        "guid": "lt@dictionaries.addons.mozilla.org",
+        "name": "Lithuanian spelling check dictionary",
+        "slug": "lithuanian-spellcheck",
+        "target_locale": "lt",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flithuanian-spellcheck\u002F"
+      },
+      "3786": {
+        "id": 3786,
+        "default_locale": "en-US",
+        "guid": "lv-LV@dictionaries.addons.mozilla.org",
+        "name": "Latviešu valodas pareizrakstības pārbaudes vārdnīca",
+        "slug": "latviešu-valodas-pareizrakstīb",
+        "target_locale": "lv",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flatvie%C5%A1u-valodas-pareizrakst%C4%ABb\u002F"
+      },
+      "3956": {
+        "id": 3956,
+        "default_locale": "en-US",
+        "guid": "hsb@dictionaries.addons.mozilla.org",
+        "name": "Upper Sorbian spelling dictionary",
+        "slug": "upper-sorbian-spelling-diction",
+        "target_locale": "hsb",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fupper-sorbian-spelling-diction\u002F"
+      },
+      "4020": {
+        "id": 4020,
+        "default_locale": "eu",
+        "guid": "eu@dictionaries.addons.mozilla.org",
+        "name": "Xuxen",
+        "slug": "xuxen",
+        "target_locale": "eu",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fxuxen\u002F"
+      },
+      "4195": {
+        "id": 4195,
+        "default_locale": "en-US",
+        "guid": "et-EE@dictionaries.addons.mozilla.org",
+        "name": "Eesti keele speller",
+        "slug": "eesti-keele-speller",
+        "target_locale": "et",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Feesti-keele-speller\u002F"
+      },
+      "4551": {
+        "id": 4551,
+        "default_locale": "ro",
+        "guid": "langpack-ro@firefox.mozilla.org",
+        "name": "Interfaţă în română pentru Firefox (romanian)",
+        "slug": "romanian-language-pack",
+        "target_locale": "ro",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fromanian-language-pack\u002F"
+      },
+      "4663": {
+        "id": 4663,
+        "default_locale": "sk",
+        "guid": "sk@dictionaries.addons.mozilla.org",
+        "name": "Slovenské slovní­ky na kontrolu preklepov",
+        "slug": "slovak-spell-checking-dictiona",
+        "target_locale": "sk-SK",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fslovak-spell-checking-dictiona\u002F"
+      },
+      "4742": {
+        "id": 4742,
+        "default_locale": "en-US",
+        "guid": "fur-IT@dictionaries.addons.mozilla.org",
+        "name": "Dizionari Furlan",
+        "slug": "dizionari-furlan",
+        "target_locale": "fur-IT",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdizionari-furlan\u002F"
+      },
+      "4782": {
+        "id": 4782,
+        "default_locale": "uk",
+        "guid": "uk-ua@dictionaries.addons.mozilla.org",
+        "name": "Український словник",
+        "slug": "ukrainian-dictionary",
+        "target_locale": "uk",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fukrainian-dictionary\u002F"
+      },
+      "4796": {
+        "id": 4796,
+        "default_locale": "es",
+        "guid": "roa-ES-val@dictionaries.addons.mozilla.org",
+        "name": "Diccionario ortográfico valenciano",
+        "slug": "valencian-spellchecker",
+        "target_locale": "ca-valencia",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fvalencian-spellchecker\u002F"
+      },
+      "4851": {
+        "id": 4851,
+        "default_locale": "pt-BR",
+        "guid": "langpack-pt-BR@firefox.mozilla.org",
+        "name": "Interface Português\u002FBrasil [pt-BR]",
+        "slug": "firefox-br",
+        "target_locale": "pt-BR",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ffirefox-br\u002F"
+      },
+      "5018": {
+        "id": 5018,
+        "default_locale": "es",
+        "guid": "gl-es@dictionaries.addons.mozilla.org",
+        "name": "Corrector de Galego",
+        "slug": "corrector-de-galego",
+        "target_locale": "gl",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcorrector-de-galego\u002F"
+      },
+      "5019": {
+        "id": 5019,
+        "default_locale": "ca",
+        "guid": "langpack-ca@firefox.mozilla.org",
+        "name": "Català Language Pack",
+        "slug": "ca-language-pack",
+        "target_locale": "ca",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fca-language-pack\u002F"
+      },
+      "5051": {
+        "id": 5051,
+        "default_locale": "en-US",
+        "guid": "am@dictionaries.addons.mozilla.org",
+        "name": "Armenian spell checker dictionary",
+        "slug": "armenian-spell-checker-diction",
+        "target_locale": "hy-AM",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Farmenian-spell-checker-diction\u002F"
+      },
+      "5125": {
+        "id": 5125,
+        "default_locale": "en-US",
+        "guid": "Srpski_latinica@dictionaries.addons.mozilla.org",
+        "name": "Srpski",
+        "slug": "srpski",
+        "target_locale": "sr",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fsrpski\u002F"
+      },
+      "5127": {
+        "id": 5127,
+        "default_locale": "af",
+        "guid": "af-ZA@dictionaries.addons.mozilla.org",
+        "name": "Afrikaanse speltoetser",
+        "slug": "afrikaans-spell-checker",
+        "target_locale": "af",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fafrikaans-spell-checker\u002F"
+      },
+      "5180": {
+        "id": 5180,
+        "default_locale": "af",
+        "guid": "langpack-af@firefox.mozilla.org",
+        "name": "Afrikaanse taalpak",
+        "slug": "afrikaans-language-pack",
+        "target_locale": "af",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fafrikaans-language-pack\u002F"
+      },
+      "5485": {
+        "id": 5485,
+        "default_locale": "sq",
+        "guid": "sq-AL@dictionaries.addons.mozilla.org",
+        "name": "Fjalori shqip",
+        "slug": "albanian-dictionary",
+        "target_locale": "sq",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Falbanian-dictionary\u002F"
+      },
+      "5563": {
+        "id": 5563,
+        "default_locale": "en-US",
+        "guid": "la@dictionaries.addons.mozilla.org",
+        "name": "Latin Dictionary",
+        "slug": "latin-dictionary",
+        "target_locale": "la",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flatin-dictionary\u002F"
+      },
+      "5679": {
+        "id": 5679,
+        "default_locale": "nl",
+        "guid": "fy@dictionaries.addons.mozilla.org",
+        "name": "Frysk Wurdboek",
+        "slug": "dictionnaire-frison",
+        "target_locale": "fy-NL",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdictionnaire-frison\u002F"
+      },
+      "5752": {
+        "id": 5752,
+        "default_locale": "en-US",
+        "guid": "langpack-eo@firefox.mozilla.org",
+        "name": "Esperanto Language Pack",
+        "slug": "esperanto-language-pack",
+        "target_locale": "eo",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fesperanto-language-pack\u002F"
+      },
+      "6081": {
+        "id": 6081,
+        "default_locale": "pt-BR",
+        "guid": "pt-BR@dellalibera.sf.net",
+        "name": "Verificador Ortográfico para Português do Brasil",
+        "slug": "verificador-ortográfico-para-p",
+        "target_locale": "pt-BR",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fverificador-ortogr%C3%A1fico-para-p\u002F"
+      },
+      "6179": {
+        "id": 6179,
+        "default_locale": "en-US",
+        "guid": "langpack-xh@firefox.mozilla.org",
+        "name": "Xhosa Language Pack",
+        "slug": "xhosa-language-pack",
+        "target_locale": "xh",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fxhosa-language-pack\u002F"
+      },
+      "6180": {
+        "id": 6180,
+        "default_locale": "en-US",
+        "guid": "langpack-en-ZA@firefox.mozilla.org",
+        "name": "English (South African) Language Pack",
+        "slug": "english-south-african-language",
+        "target_locale": "en-ZA",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fenglish-south-african-language\u002F"
+      },
+      "6293": {
+        "id": 6293,
+        "default_locale": "id",
+        "guid": "langpack-id@firefox.mozilla.org",
+        "name": "Paket Bahasa Indonesia (ID) untuk Firefox",
+        "slug": "indonesian-langpack",
+        "target_locale": "id",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Findonesian-langpack\u002F"
+      },
+      "6818": {
+        "id": 6818,
+        "default_locale": "en-US",
+        "guid": "id@ewesewes.net",
+        "name": "Kamus Pengecek Ejaan Bahasa Indonesia",
+        "slug": "kamus-pengecek-ejaan-bahasa-in",
+        "target_locale": "id",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkamus-pengecek-ejaan-bahasa-in\u002F"
+      },
+      "6868": {
+        "id": 6868,
+        "default_locale": "en-US",
+        "guid": "nb-NO@dictionaries.addons.mozilla.org",
+        "name": "Norsk bokmål ordliste",
+        "slug": "norsk-bokmål-ordliste",
+        "target_locale": "nb-NO",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnorsk-bokm%C3%A5l-ordliste\u002F"
+      },
+      "6869": {
+        "id": 6869,
+        "default_locale": "en-US",
+        "guid": "nn-NO@dictionaries.addons.mozilla.org",
+        "name": "Norsk nynorsk ordliste",
+        "slug": "norsk-nynorsk-ordliste",
+        "target_locale": "nn-NO",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnorsk-nynorsk-ordliste\u002F"
+      },
+      "6930": {
+        "id": 6930,
+        "default_locale": "en-US",
+        "guid": "langpack-te@firefox.mozilla.org",
+        "name": "Telugu (IN) Language Pack",
+        "slug": "telugu-in-language-pack-6930",
+        "target_locale": "te",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftelugu-in-language-pack-6930\u002F"
+      },
+      "7020": {
+        "id": 7020,
+        "default_locale": "es",
+        "guid": "es-MX@dictionaries.addons.mozilla.org",
+        "name": "Diccionario español México",
+        "slug": "diccionario-español-méxico",
+        "target_locale": "es-MX",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdiccionario-espa%C3%B1ol-m%C3%A9xico\u002F"
+      },
+      "7096": {
+        "id": 7096,
+        "default_locale": "en-US",
+        "guid": "langpack-si@firefox.mozilla.org",
+        "name": "Sinhala (LK) Language Pack",
+        "slug": "sinhala-lk-language-pack",
+        "target_locale": "si",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fsinhala-lk-language-pack\u002F"
+      },
+      "7130": {
+        "id": 7130,
+        "default_locale": "en-US",
+        "guid": "mi@dictionaries.addons.mozilla.org",
+        "name": "Te Papakupu Māori",
+        "slug": "te-papakupu-māori",
+        "target_locale": "mi",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fte-papakupu-m%C4%81ori\u002F"
+      },
+      "7221": {
+        "id": 7221,
+        "default_locale": "en-US",
+        "guid": "langpack-lv@firefox.mozilla.org",
+        "name": "saskarnes latviskojums",
+        "slug": "saskarnes-latviskoju",
+        "target_locale": "lv",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fsaskarnes-latviskoju\u002F"
+      },
+      "7479": {
+        "id": 7479,
+        "default_locale": "vi",
+        "guid": "dictionary@vi.mozdev.org",
+        "name": "Từ điển tiếng Việt",
+        "slug": "vietnamese-dictionary",
+        "target_locale": "vi",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fvietnamese-dictionary\u002F"
+      },
+      "7573": {
+        "id": 7573,
+        "default_locale": "en-US",
+        "guid": "langpack-et@firefox.mozilla.org",
+        "name": "Eesti (et) keele pakk",
+        "slug": "eesti-et-keele-pakk",
+        "target_locale": "et",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Feesti-et-keele-pakk\u002F"
+      },
+      "7583": {
+        "id": 7583,
+        "default_locale": "fa",
+        "guid": "fa@dictionaries.addons.mozilla.org",
+        "name": "غلطگیر املایی",
+        "slug": "غلطگیر-املایی",
+        "target_locale": "fa",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D8%BA%D9%84%D8%B7%DA%AF%DB%8C%D8%B1-%D8%A7%D9%85%D9%84%D8%A7%DB%8C%DB%8C\u002F"
+      },
+      "7740": {
+        "id": 7740,
+        "default_locale": "es",
+        "guid": "langpack-gl@firefox.mozilla.org",
+        "name": "Galician (Galicia) Language Pack",
+        "slug": "galician-galiza-language-pack",
+        "target_locale": "gl",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgalician-galiza-language-pack\u002F"
+      },
+      "7981": {
+        "id": 7981,
+        "default_locale": "en-US",
+        "guid": "ur@dictionaries.addons.mozilla.org",
+        "name": "Urdu Dictionary",
+        "slug": "urdu-dictionary",
+        "target_locale": "ur",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Furdu-dictionary\u002F"
+      },
+      "8141": {
+        "id": 8141,
+        "default_locale": "uk",
+        "guid": "langpack-uk@firefox.mozilla.org",
+        "name": "Украинский языковой пакет",
+        "slug": "ukrainian-language-pack",
+        "target_locale": "uk",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fukrainian-language-pack\u002F"
+      },
+      "8228": {
+        "id": 8228,
+        "default_locale": "en-US",
+        "guid": "langpack-vi@firefox.mozilla.org",
+        "name": "Vietnamese Language Pack",
+        "slug": "vietnamese-language-pack",
+        "target_locale": "vi",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fvietnamese-language-pack\u002F"
+      },
+      "8323": {
+        "id": 8323,
+        "default_locale": "en-US",
+        "guid": "ku@dictionaries.addons.mozilla.org",
+        "name": "Rastnivîs",
+        "slug": "rastnivîs",
+        "target_locale": "ku",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Frastniv%C3%AEs\u002F"
+      },
+      "8343": {
+        "id": 8343,
+        "default_locale": "es",
+        "guid": "langpack-es-MX@firefox.mozilla.org",
+        "name": "Español (México) Language Pack",
+        "slug": "spanish-mexico-language-pack",
+        "target_locale": "es-MX",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fspanish-mexico-language-pack\u002F"
+      },
+      "8884": {
+        "id": 8884,
+        "default_locale": "es",
+        "guid": "langpack-es-CL@firefox.mozilla.org",
+        "name": "Pack de idioma Español (Chile)",
+        "slug": "spanish-chile-language-pack",
+        "target_locale": "es-CL",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fspanish-chile-language-pack\u002F"
+      },
+      "8902": {
+        "id": 8902,
+        "default_locale": "en-US",
+        "guid": "tamildic@ulagam.net",
+        "name": "Tamil Spell Checker for Firefox",
+        "slug": "tamil-spell-checker-for-firefo",
+        "target_locale": "ta",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftamil-spell-checker-for-firefo\u002F"
+      },
+      "9192": {
+        "id": 9192,
+        "default_locale": "ca",
+        "guid": "ca-valencia@dictionaries.addons.mozilla.org",
+        "name": "Diccionari valencià",
+        "slug": "valencian-catalan-dictionary",
+        "target_locale": "ca-valencia",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fvalencian-catalan-dictionary\u002F"
+      },
+      "9359": {
+        "id": 9359,
+        "default_locale": "de",
+        "guid": "de_AT@dicts.j3e.de",
+        "name": "Wörterbuch  Deutsch (de_AT)",
+        "slug": "german-dictionary-de_at-for-sp",
+        "target_locale": "de-AT",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgerman-dictionary-de_at-for-sp\u002F"
+      },
+      "9360": {
+        "id": 9360,
+        "default_locale": "de",
+        "guid": "de_CH@dicts.j3e.de",
+        "name": "Wörterbuch  Deutsch (de_CH)",
+        "slug": "german-dictionary-de_ch-for-sp",
+        "target_locale": "de-CH",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgerman-dictionary-de_ch-for-sp\u002F"
+      },
+      "9361": {
+        "id": 9361,
+        "default_locale": "de",
+        "guid": "de_DE@dicts.j3e.de",
+        "name": "Wörterbuch  Deutsch (de_DE)",
+        "slug": "german-dictionary-de_de-for-sp",
+        "target_locale": "de-DE",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgerman-dictionary-de_de-for-sp\u002F"
+      },
+      "9702": {
+        "id": 9702,
+        "default_locale": "ca",
+        "guid": "langpack-ca-valencia@firefox.mozilla.org",
+        "name": "Firefox en valencià",
+        "slug": "valencian-catalan-languag-9702",
+        "target_locale": "ca-valencia",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fvalencian-catalan-languag-9702\u002F"
+      },
+      "9795": {
+        "id": 9795,
+        "default_locale": "en-US",
+        "guid": "hr-HR-2@dictionaries.addons.mozilla.org",
+        "name": "Croatian Dictionary (Hrvatski Rječnik)",
+        "slug": "croatian-dictionary",
+        "target_locale": "hr",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcroatian-dictionary\u002F"
+      },
+      "9971": {
+        "id": 9971,
+        "default_locale": "en-US",
+        "guid": "ne-NP@dictionaries.addons.mozilla.org",
+        "name": "Nepali Dictionary",
+        "slug": "nepali-dictionary",
+        "target_locale": "ne-NP",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnepali-dictionary\u002F"
+      },
+      "10894": {
+        "id": 10894,
+        "default_locale": "en-US",
+        "guid": "sr-RS@dictionaries.addons.mozilla.org",
+        "name": "Српски речник - Serbian Dictionary",
+        "slug": "српски-речник-serbian-dictiona",
+        "target_locale": "sr",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D1%81%D1%80%D0%BF%D1%81%D0%BA%D0%B8-%D1%80%D0%B5%D1%87%D0%BD%D0%B8%D0%BA-serbian-dictiona\u002F"
+      },
+      "11356": {
+        "id": 11356,
+        "default_locale": "es",
+        "guid": "es-ve@dictionaries.addons.mozilla.org",
+        "name": "Diccionario en español para Venezuela",
+        "slug": "diccionario-español-venezuela",
+        "target_locale": "es-VE",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdiccionario-espa%C3%B1ol-venezuela\u002F"
+      },
+      "11487": {
+        "id": 11487,
+        "default_locale": "ko",
+        "guid": "ko-KR@dictionaries.addons.mozilla.org",
+        "name": "한국어 맞춤법 검사기",
+        "slug": "korean-spellchecker",
+        "target_locale": "ko",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkorean-spellchecker\u002F"
+      },
+      "11940": {
+        "id": 11940,
+        "default_locale": "en-US",
+        "guid": "son-ML@dictionaries.addons.mozilla.org",
+        "name": "Soŋay senni hantum tenjandikaw",
+        "slug": "soŋay-senni-hantum-tenjandikaw",
+        "target_locale": "son",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fso%C5%8Bay-senni-hantum-tenjandikaw\u002F"
+      },
+      "12797": {
+        "id": 12797,
+        "default_locale": "en-US",
+        "guid": "mr-IN@dictionaries.addons.mozilla.org",
+        "name": "Marathi Dictionary",
+        "slug": "marathi-dictionary",
+        "target_locale": "mr",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmarathi-dictionary\u002F"
+      },
+      "13201": {
+        "id": 13201,
+        "default_locale": "en-US",
+        "guid": "dsb@dictionaries.addons.mozilla.org",
+        "name": "Lower Sorbian dictionary",
+        "slug": "dsb-spell",
+        "target_locale": "dsb",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdsb-spell\u002F"
+      },
+      "13589": {
+        "id": 13589,
+        "default_locale": "hu",
+        "guid": "langpack-hu@firefox.mozilla.org",
+        "name": "Magyar nyelvi csomag",
+        "slug": "magyar-nyelvi",
+        "target_locale": "hu",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmagyar-nyelvi\u002F"
+      },
+      "13660": {
+        "id": 13660,
+        "default_locale": "en-US",
+        "guid": "bn-BD@dictionaries.addons.mozilla.org",
+        "name": "Bengali (Bangladesh) Dictionary",
+        "slug": "bengali-bangladesh-dictionary",
+        "target_locale": "bn-BD",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbengali-bangladesh-dictionary\u002F"
+      },
+      "14027": {
+        "id": 14027,
+        "default_locale": "en-US",
+        "guid": "eegbe@dictionaries.addons.mozilla.org",
+        "name": "Eʋegbe Spelling Dictionary",
+        "slug": "eʋegbe-spelling-dictionary",
+        "target_locale": "eegbe",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fe%CA%8Begbe-spelling-dictionary\u002F"
+      },
+      "46490": {
+        "id": 46490,
+        "default_locale": "en-US",
+        "guid": "zu-ZA@dictionaries.addons.mozilla.org",
+        "name": "Zulu spell checker",
+        "slug": "zulu-spell-checker",
+        "target_locale": "zu",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fzulu-spell-checker\u002F"
+      },
+      "46519": {
+        "id": 46519,
+        "default_locale": "en-US",
+        "guid": "ns-ZA@dictionaries.addons.mozilla.org",
+        "name": "Northern Sotho spell checker",
+        "slug": "northern-sotho-spell-checker",
+        "target_locale": "nso",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnorthern-sotho-spell-checker\u002F"
+      },
+      "46599": {
+        "id": 46599,
+        "default_locale": "en-US",
+        "guid": "xh-ZA@dictionaries.addons.mozilla.org",
+        "name": "Xhosa spell checker",
+        "slug": "xhosa-spell-checker",
+        "target_locale": "xh",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fxhosa-spell-checker\u002F"
+      },
+      "46601": {
+        "id": 46601,
+        "default_locale": "en-US",
+        "guid": "ve-ZA@dictionaries.addons.mozilla.org",
+        "name": "Venda spell checker",
+        "slug": "venda-spell-checker",
+        "target_locale": "ve",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fvenda-spell-checker\u002F"
+      },
+      "46609": {
+        "id": 46609,
+        "default_locale": "en-US",
+        "guid": "nr-ZA@dictionaries.addons.mozilla.org",
+        "name": "Ndebele (South) spell checker",
+        "slug": "ndebele-south-spell-checker",
+        "target_locale": "nr",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fndebele-south-spell-checker\u002F"
+      },
+      "46610": {
+        "id": 46610,
+        "default_locale": "en-US",
+        "guid": "st-ZA@dictionaries.addons.mozilla.org",
+        "name": "Southern Sotho spell checker",
+        "slug": "southern-sotho-spell-checker",
+        "target_locale": "st",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fsouthern-sotho-spell-checker\u002F"
+      },
+      "46611": {
+        "id": 46611,
+        "default_locale": "en-US",
+        "guid": "ts-ZA@dictionaries.addons.mozilla.org",
+        "name": "Tsonga spell checker",
+        "slug": "tsonga-spell-checker",
+        "target_locale": "ts",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftsonga-spell-checker\u002F"
+      },
+      "46614": {
+        "id": 46614,
+        "default_locale": "en-US",
+        "guid": "ss-ZA@dictionaries.addons.mozilla.org",
+        "name": "Swati spell checker",
+        "slug": "swati-spell-checker",
+        "target_locale": "ss",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fswati-spell-checker\u002F"
+      },
+      "46617": {
+        "id": 46617,
+        "default_locale": "en-US",
+        "guid": "tn-ZA@dictionaries.addons.mozilla.org",
+        "name": "Tswana spell checker",
+        "slug": "tswana-spell-checker",
+        "target_locale": "tn",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftswana-spell-checker\u002F"
+      },
+      "48577": {
+        "id": 48577,
+        "default_locale": "en-US",
+        "guid": "ht-HT@dictionaries.addons.mozilla.org",
+        "name": "Haitian Creole spell checker",
+        "slug": "haitian-creole-spell-checker",
+        "target_locale": "ht",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhaitian-creole-spell-checker\u002F"
+      },
+      "80825": {
+        "id": 80825,
+        "default_locale": "en-US",
+        "guid": "langpack-br@firefox.mozilla.org",
+        "name": "Breton Language Pack for Firefox",
+        "slug": "breton-language-pack-for-firef",
+        "target_locale": "br",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbreton-language-pack-for-firef\u002F"
+      },
+      "85790": {
+        "id": 85790,
+        "default_locale": "en-US",
+        "guid": "ha-GH@dictionaries.addons.mozilla.org",
+        "name": "Hausa Spelling Dictionary",
+        "slug": "hausa-spelling-dictionary",
+        "target_locale": "ha-GH",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhausa-spelling-dictionary\u002F"
+      },
+      "94269": {
+        "id": 94269,
+        "default_locale": "en-US",
+        "guid": "langpack-hy-AM@firefox.mozilla.org",
+        "name": "Armenian (hy-AM) Language Pack",
+        "slug": "armenian-hy-am-language-pack",
+        "target_locale": "hy-AM",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Farmenian-hy-am-language-pack\u002F"
+      },
+      "102885": {
+        "id": 102885,
+        "default_locale": "en-US",
+        "guid": "mn@dictionaries.addons.mozilla.org",
+        "name": "Mongolian spell checking dictionary",
+        "slug": "mongolian-spell-checking-dicti",
+        "target_locale": "mn",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmongolian-spell-checking-dicti\u002F"
+      },
+      "204309": {
+        "id": 204309,
+        "default_locale": "en-US",
+        "guid": "haw-US@dictionaries.addons.mozilla.org",
+        "name": "Hawaiian spell checker",
+        "slug": "hawaiian-spell-checker",
+        "target_locale": "haw",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhawaiian-spell-checker\u002F"
+      },
+      "204310": {
+        "id": 204310,
+        "default_locale": "en-US",
+        "guid": "hil-PH@dictionaries.addons.mozilla.org",
+        "name": "Hiligaynon spell checker",
+        "slug": "hiligaynon-spell-checker",
+        "target_locale": "hil",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhiligaynon-spell-checker\u002F"
+      },
+      "204312": {
+        "id": 204312,
+        "default_locale": "en-US",
+        "guid": "ln-CD@dictionaries.addons.mozilla.org",
+        "name": "Lingala spell checker (Hunspell ln-CD)",
+        "slug": "lingala-spell-checker",
+        "target_locale": "ln",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flingala-spell-checker\u002F"
+      },
+      "204314": {
+        "id": 204314,
+        "default_locale": "en-US",
+        "guid": "tk-TM@dictionaries.addons.mozilla.org",
+        "name": "Turkmen spell checker dictionary",
+        "slug": "turkmen-spell-checker",
+        "target_locale": "tk",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fturkmen-spell-checker\u002F"
+      },
+      "217290": {
+        "id": 217290,
+        "default_locale": "en-US",
+        "guid": "sw-TZ@dellalibera.sf.net",
+        "name": "Kiswahili Spell Checker",
+        "slug": "kiswahili-spell-checker",
+        "target_locale": "sw-TZ",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkiswahili-spell-checker\u002F"
+      },
+      "217294": {
+        "id": 217294,
+        "default_locale": "en-US",
+        "guid": "mg-MG@dellalibera.sf.net",
+        "name": "Malagasy Spell Checker",
+        "slug": "malagasy-spell-checker",
+        "target_locale": "mg-MG",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmalagasy-spell-checker\u002F"
+      },
+      "221506": {
+        "id": 221506,
+        "default_locale": "en-US",
+        "guid": "hi-IN@dellalibera.sf.net",
+        "name": "Hindi Spell Checker",
+        "slug": "hindi-spell-checker",
+        "target_locale": "hi-IN",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhindi-spell-checker\u002F"
+      },
+      "222211": {
+        "id": 222211,
+        "default_locale": "en-US",
+        "guid": "am-ET@dellalibera.sf.net",
+        "name": "Amharic Spell Checker",
+        "slug": "amharic-spell-checker",
+        "target_locale": "am-ET",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Famharic-spell-checker\u002F"
+      },
+      "222212": {
+        "id": 222212,
+        "default_locale": "en-US",
+        "guid": "az-IR@dellalibera.sf.net",
+        "name": "Azerbaijani Spell Checker",
+        "slug": "azerbaijani-spell-checker",
+        "target_locale": "az-IR",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fazerbaijani-spell-checker\u002F"
+      },
+      "222213": {
+        "id": 222213,
+        "default_locale": "en-US",
+        "guid": "ny-MW@dellalibera.sf.net",
+        "name": "Chichewa Spell Check",
+        "slug": "chichewa-spell-check",
+        "target_locale": "ny-MW",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fchichewa-spell-check\u002F"
+      },
+      "222500": {
+        "id": 222500,
+        "default_locale": "en-US",
+        "guid": "fo-FO@dellalibera.sf.net",
+        "name": "Faroese Spell Checker (Faroe Islands)",
+        "slug": "faroese-spell-checker-faroe-is",
+        "target_locale": "fo-FO",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ffaroese-spell-checker-faroe-is\u002F"
+      },
+      "222506": {
+        "id": 222506,
+        "default_locale": "en-US",
+        "guid": "gu-IN@dellalibera.sf.net",
+        "name": "Gujarati Spell Checker (India)",
+        "slug": "gujarati-spell-checker-india",
+        "target_locale": "gu-IN",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgujarati-spell-checker-india\u002F"
+      },
+      "222538": {
+        "id": 222538,
+        "default_locale": "pl",
+        "guid": "yi@dictionaries.addons.mozilla.org",
+        "name": "Yiddish spell checker (YIVO)",
+        "slug": "yiddish-spell-checker-yivo",
+        "target_locale": "yi",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fyiddish-spell-checker-yivo\u002F"
+      },
+      "231175": {
+        "id": 231175,
+        "default_locale": "en-US",
+        "guid": "cy-GB-1@dictionaries.addons.mozilla.org",
+        "name": "Geiriadur Cymraeg",
+        "slug": "geiriadur-cymraeg",
+        "target_locale": "cy",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgeiriadur-cymraeg\u002F"
+      },
+      "232704": {
+        "id": 232704,
+        "default_locale": "en-US",
+        "guid": "or_IN@dellalibera.sf.net",
+        "name": "Oriya Spell Checker",
+        "slug": "oriya-spell-checker",
+        "target_locale": "or",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Foriya-spell-checker\u002F"
+      },
+      "232706": {
+        "id": 232706,
+        "default_locale": "en-US",
+        "guid": "pa_IN@dellalibera.sf.net",
+        "name": "Punjabi Spell Checker",
+        "slug": "punjabi-spell-checker",
+        "target_locale": "pa-IN",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fpunjabi-spell-checker\u002F"
+      },
+      "260204": {
+        "id": 260204,
+        "default_locale": "en-US",
+        "guid": "gd-GB@dictionaries.addons.mozilla.org",
+        "name": "Scottish Gaelic spell checker",
+        "slug": "scottish-gaelic-spell-checker",
+        "target_locale": "gd",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fscottish-gaelic-spell-checker\u002F"
+      },
+      "269588": {
+        "id": 269588,
+        "default_locale": "en-US",
+        "guid": "indlinux-telugu@lists.sourceforge.net",
+        "name": "Telugu Spell Checker.",
+        "slug": "telugu-spell-checker",
+        "target_locale": "te",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftelugu-spell-checker\u002F"
+      },
+      "277036": {
+        "id": 277036,
+        "default_locale": "en-US",
+        "guid": "tr-fix@dictionaries.addons.mozilla.org",
+        "name": "Türkçe Yazım Denetimi",
+        "slug": "turkce-yazim-denetimi",
+        "target_locale": "tr",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fturkce-yazim-denetimi\u002F"
+      },
+      "283744": {
+        "id": 283744,
+        "default_locale": "en-US",
+        "guid": "mk-MK@dictionaries.addons.mozilla.org",
+        "name": "Macedonian (Македонски) Spellchecker - Cyrillic",
+        "slug": "macedonian-makedonski-mk-mk",
+        "target_locale": "mk",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmacedonian-makedonski-mk-mk\u002F"
+      },
+      "286854": {
+        "id": 286854,
+        "default_locale": "it",
+        "guid": "langpack-lij@firefox.mozilla.org",
+        "name": "Ligure (lij) Language Pack",
+        "slug": "ligure-zenéize-language-pac",
+        "target_locale": "lij",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fligure-zen%C3%A9ize-language-pac\u002F"
+      },
+      "291304": {
+        "id": 291304,
+        "default_locale": "en-US",
+        "guid": "en-NZ@dictionaries.addons.mozilla.org",
+        "name": "New Zealand English Dictionary",
+        "slug": "new-zealand-english-dict",
+        "target_locale": "en-NZ",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnew-zealand-english-dict\u002F"
+      },
+      "306383": {
+        "id": 306383,
+        "default_locale": "pt-BR",
+        "guid": "uz@dellalibera.sf.net",
+        "name": "Uzbek Spell Checker (Uzbekistan)",
+        "slug": "uzbek-spell-checker",
+        "target_locale": "uz",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fuzbek-spell-checker\u002F"
+      },
+      "325010": {
+        "id": 325010,
+        "default_locale": "en-US",
+        "guid": "ia-xx@dictionaries.addons.mozilla.org",
+        "name": "Corrector orthographic de interlingua",
+        "slug": "corrector_orthographic",
+        "target_locale": "ia-ia",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcorrector_orthographic\u002F"
+      },
+      "331662": {
+        "id": 331662,
+        "default_locale": "en-US",
+        "guid": "asturianu@dictionaries.addons.mozilla.org",
+        "name": "Correutor ortográficu d'asturianu",
+        "slug": "correutor_asturianu",
+        "target_locale": "ast",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcorreutor_asturianu\u002F"
+      },
+      "337161": {
+        "id": 337161,
+        "default_locale": "pt-BR",
+        "guid": "sa-IN@dellalibera.sf.net",
+        "name": "Sanskrit Spell Checker",
+        "slug": "sanskrit-spell-checker",
+        "target_locale": "sa",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fsanskrit-spell-checker\u002F"
+      },
+      "337264": {
+        "id": 337264,
+        "default_locale": "ca",
+        "guid": "an-ES@dictionaries.addons.mozilla.org",
+        "name": "Corrector ortografico aragonés",
+        "slug": "corrector-ortografico-aragones",
+        "target_locale": "an",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcorrector-ortografico-aragones\u002F"
+      },
+      "337368": {
+        "id": 337368,
+        "default_locale": "en-US",
+        "guid": "mugunth@thamizha.com",
+        "name": "ThamiZha! Solthiruthi(Tamil spellchecker)",
+        "slug": "thamizha-solthiruthi",
+        "target_locale": "ta-IN",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fthamizha-solthiruthi\u002F"
+      },
+      "347439": {
+        "id": 347439,
+        "default_locale": "ru",
+        "guid": "hunspell-ru@dictionaries.addons.mozilla.org",
+        "name": "Russian Hunspell dictionary",
+        "slug": "russian-hunspell-dictionary",
+        "target_locale": "ru",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Frussian-hunspell-dictionary\u002F"
+      },
+      "353517": {
+        "id": 353517,
+        "default_locale": "es",
+        "guid": "pap-an@lasindias.org",
+        "name": "Dikshonario Papiamentu",
+        "slug": "dikshonario-papiamentu",
+        "target_locale": "pap-CW",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdikshonario-papiamentu\u002F"
+      },
+      "354872": {
+        "id": 354872,
+        "default_locale": "en-US",
+        "guid": "fr-dicollecte@dictionaries.addons.mozilla.org",
+        "name": "French spelling dictionary",
+        "slug": "dictionnaire-français1",
+        "target_locale": "fr",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdictionnaire-fran%C3%A7ais1\u002F"
+      },
+      "358676": {
+        "id": 358676,
+        "default_locale": "es",
+        "guid": "langpack-an@firefox.mozilla.org",
+        "name": "Aragonese Language Pack",
+        "slug": "aragonese-language-pack",
+        "target_locale": "an",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Faragonese-language-pack\u002F"
+      },
+      "360545": {
+        "id": 360545,
+        "default_locale": "de",
+        "guid": "alterechtschreibung@googlemail.com",
+        "name": "Deutsches Wörterbuch (de-DE), alte Rechtschreibung",
+        "slug": "deutsch-alte-rechtschreibung",
+        "target_locale": "de-DE",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdeutsch-alte-rechtschreibung\u002F"
+      },
+      "376557": {
+        "id": 376557,
+        "default_locale": "en-US",
+        "guid": "langpack-da@firefox.mozilla.org",
+        "name": "Dansk (da) Language Pack",
+        "slug": "dansk-da-language-pack",
+        "target_locale": "da",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdansk-da-language-pack\u002F"
+      },
+      "402994": {
+        "id": 402994,
+        "default_locale": "en-US",
+        "guid": "kn@dictionaries.addons.mozilla.org",
+        "name": "Kannada Spell Checker",
+        "slug": "kannada-spell-checker",
+        "target_locale": "kn",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkannada-spell-checker\u002F"
+      },
+      "407142": {
+        "id": 407142,
+        "default_locale": "en-US",
+        "guid": "langpack-en-US@firefox.mozilla.org",
+        "name": "English (US) Language Pack",
+        "slug": "english-us-language-pack",
+        "target_locale": "en-US",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fenglish-us-language-pack\u002F"
+      },
+      "408638": {
+        "id": 408638,
+        "default_locale": "es",
+        "guid": "manuel@elarte.coop",
+        "name": "Diccionario Papiamento",
+        "slug": "diccionario-papiamento",
+        "target_locale": "pap-AW",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdiccionario-papiamento\u002F"
+      },
+      "413604": {
+        "id": 413604,
+        "default_locale": "cs",
+        "guid": "cs2@dictionaries.addons.mozilla.org",
+        "name": "Český slovník kontroly pravopisu (bez diakritiky)",
+        "slug": "czech-spell-checking-without-d",
+        "target_locale": "cs",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fczech-spell-checking-without-d\u002F"
+      },
+      "417146": {
+        "id": 417146,
+        "default_locale": "en-US",
+        "guid": "langpack-ach@firefox.mozilla.org",
+        "name": "Acholi (UG) Language Pack",
+        "slug": "acholi-ug-language-pack",
+        "target_locale": "ach",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Facholi-ug-language-pack\u002F"
+      },
+      "417148": {
+        "id": 417148,
+        "default_locale": "en-US",
+        "guid": "langpack-as@firefox.mozilla.org",
+        "name": "Assamese (IN) Language Pack",
+        "slug": "assamese-in-language-pack",
+        "target_locale": "as",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fassamese-in-language-pack\u002F"
+      },
+      "417150": {
+        "id": 417150,
+        "default_locale": "en-US",
+        "guid": "langpack-ast@firefox.mozilla.org",
+        "name": "Asturianu Language Pack",
+        "slug": "asturianu-language-pack",
+        "target_locale": "ast",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fasturianu-language-pack\u002F"
+      },
+      "417152": {
+        "id": 417152,
+        "default_locale": "en-US",
+        "guid": "langpack-be@firefox.mozilla.org",
+        "name": "Беларуская Language Pack",
+        "slug": "беларуская-language-pack",
+        "target_locale": "be",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%BA%D0%B0%D1%8F-language-pack\u002F"
+      },
+      "417154": {
+        "id": 417154,
+        "default_locale": "bg",
+        "guid": "langpack-bg@firefox.mozilla.org",
+        "name": "български Language Pack",
+        "slug": "български-language-pack",
+        "target_locale": "bg",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8-language-pack\u002F"
+      },
+      "417156": {
+        "id": 417156,
+        "default_locale": "bn-IN",
+        "guid": "langpack-bn-IN@firefox.mozilla.org",
+        "name": "Bengali (India) Language Pack",
+        "slug": "bengali-india-language-pack",
+        "target_locale": "bn-IN",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbengali-india-language-pack\u002F"
+      },
+      "417158": {
+        "id": 417158,
+        "default_locale": "bs",
+        "guid": "langpack-bs@firefox.mozilla.org",
+        "name": "Bosanski Language Pack",
+        "slug": "bosanski-language-pack",
+        "target_locale": "bs",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbosanski-language-pack\u002F"
+      },
+      "417160": {
+        "id": 417160,
+        "default_locale": "cs",
+        "guid": "langpack-cs@firefox.mozilla.org",
+        "name": "Czech (CZ) Language Pack",
+        "slug": "czech-cz-language-pack",
+        "target_locale": "cs",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fczech-cz-language-pack\u002F"
+      },
+      "417162": {
+        "id": 417162,
+        "default_locale": "cy",
+        "guid": "langpack-cy@firefox.mozilla.org",
+        "name": "Cymraeg Language Pack",
+        "slug": "cymraeg-language-pack",
+        "target_locale": "cy",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fcymraeg-language-pack\u002F"
+      },
+      "417164": {
+        "id": 417164,
+        "default_locale": "de",
+        "guid": "langpack-de@firefox.mozilla.org",
+        "name": "Deutsch (DE) Language Pack",
+        "slug": "deutsch-de-language-pack",
+        "target_locale": "de",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdeutsch-de-language-pack\u002F"
+      },
+      "417166": {
+        "id": 417166,
+        "default_locale": "el",
+        "guid": "langpack-el@firefox.mozilla.org",
+        "name": "Greek (GR) Language Pack",
+        "slug": "greek-gr-language-pack",
+        "target_locale": "el",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgreek-gr-language-pack\u002F"
+      },
+      "417168": {
+        "id": 417168,
+        "default_locale": "en-GB",
+        "guid": "langpack-en-GB@firefox.mozilla.org",
+        "name": "English (GB) Language Pack",
+        "slug": "english-gb-language-pack",
+        "target_locale": "en-GB",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fenglish-gb-language-pack\u002F"
+      },
+      "417170": {
+        "id": 417170,
+        "default_locale": "es-AR",
+        "guid": "langpack-es-AR@firefox.mozilla.org",
+        "name": "Español (AR) Language Pack",
+        "slug": "español-ar-language-pack",
+        "target_locale": "es-AR",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fespa%C3%B1ol-ar-language-pack\u002F"
+      },
+      "417172": {
+        "id": 417172,
+        "default_locale": "es-ES",
+        "guid": "langpack-es-ES@firefox.mozilla.org",
+        "name": "Español (España) Language Pack",
+        "slug": "español-españa-language-pac",
+        "target_locale": "es-ES",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fespa%C3%B1ol-espa%C3%B1a-language-pac\u002F"
+      },
+      "417174": {
+        "id": 417174,
+        "default_locale": "eu",
+        "guid": "langpack-eu@firefox.mozilla.org",
+        "name": "Basque Language Pack",
+        "slug": "basque-language-pack",
+        "target_locale": "eu",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbasque-language-pack\u002F"
+      },
+      "417176": {
+        "id": 417176,
+        "default_locale": "fi",
+        "guid": "langpack-fi@firefox.mozilla.org",
+        "name": "Finnish Language Pack",
+        "slug": "finnish-language-pack",
+        "target_locale": "fi",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ffinnish-language-pack\u002F"
+      },
+      "417178": {
+        "id": 417178,
+        "default_locale": "fr",
+        "guid": "langpack-fr@firefox.mozilla.org",
+        "name": "Français Language Pack",
+        "slug": "français-language-pack",
+        "target_locale": "fr",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ffran%C3%A7ais-language-pack\u002F"
+      },
+      "417180": {
+        "id": 417180,
+        "default_locale": "fy-NL",
+        "guid": "langpack-fy-NL@firefox.mozilla.org",
+        "name": "Frysk (fy) Language Pack",
+        "slug": "frysk-fy-language-pack",
+        "target_locale": "fy-NL",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ffrysk-fy-language-pack\u002F"
+      },
+      "417182": {
+        "id": 417182,
+        "default_locale": "ga-IE",
+        "guid": "langpack-ga-IE@firefox.mozilla.org",
+        "name": "Irish (IE) Language Pack",
+        "slug": "irish-ie-language-pack",
+        "target_locale": "ga-IE",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Firish-ie-language-pack\u002F"
+      },
+      "417184": {
+        "id": 417184,
+        "default_locale": "en-US",
+        "guid": "langpack-gu-IN@firefox.mozilla.org",
+        "name": "Gujarati (IN) Language Pack",
+        "slug": "gujarati-in-language-pack",
+        "target_locale": "gu-IN",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgujarati-in-language-pack\u002F"
+      },
+      "417186": {
+        "id": 417186,
+        "default_locale": "he",
+        "guid": "langpack-he@firefox.mozilla.org",
+        "name": "Hebrew (IL) Language Pack",
+        "slug": "hebrew-il-language-pack",
+        "target_locale": "he",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhebrew-il-language-pack\u002F"
+      },
+      "417188": {
+        "id": 417188,
+        "default_locale": "hi-IN",
+        "guid": "langpack-hi-IN@firefox.mozilla.org",
+        "name": "Hindi Language Pack",
+        "slug": "hindi-language-pack",
+        "target_locale": "hi-IN",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhindi-language-pack\u002F"
+      },
+      "417190": {
+        "id": 417190,
+        "default_locale": "hr",
+        "guid": "langpack-hr@firefox.mozilla.org",
+        "name": "Hrvatski (HR) Language Pack",
+        "slug": "hrvatski-hr-language-pack",
+        "target_locale": "hr",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhrvatski-hr-language-pack\u002F"
+      },
+      "417192": {
+        "id": 417192,
+        "default_locale": "is",
+        "guid": "langpack-is@firefox.mozilla.org",
+        "name": "Icelandic (IS) Language Pack",
+        "slug": "icelandic-is-language-pack",
+        "target_locale": "is",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ficelandic-is-language-pack\u002F"
+      },
+      "417194": {
+        "id": 417194,
+        "default_locale": "it",
+        "guid": "langpack-it@firefox.mozilla.org",
+        "name": "Italiano (IT) Language Pack",
+        "slug": "italiano-it-language-pack",
+        "target_locale": "it",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fitaliano-it-language-pack\u002F"
+      },
+      "417196": {
+        "id": 417196,
+        "default_locale": "ja",
+        "guid": "langpack-ja@firefox.mozilla.org",
+        "name": "Japanese Language Pack",
+        "slug": "japanese-language-pack-1",
+        "target_locale": "ja",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fjapanese-language-pack-1\u002F"
+      },
+      "417198": {
+        "id": 417198,
+        "default_locale": "kk",
+        "guid": "langpack-kk@firefox.mozilla.org",
+        "name": "Kazakh (KZ) Language Pack",
+        "slug": "kazakh-kz-language-pack",
+        "target_locale": "kk",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkazakh-kz-language-pack\u002F"
+      },
+      "417200": {
+        "id": 417200,
+        "default_locale": "km",
+        "guid": "langpack-km@firefox.mozilla.org",
+        "name": "ខ្មែរ Language Pack",
+        "slug": "ខមរ-language-pack",
+        "target_locale": "km",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%E1%9E%81%E1%9E%98%E1%9E%9A-language-pack\u002F"
+      },
+      "417202": {
+        "id": 417202,
+        "default_locale": "kn",
+        "guid": "langpack-kn@firefox.mozilla.org",
+        "name": "Kannada (IN) Language Pack",
+        "slug": "kannada-in-language-pack",
+        "target_locale": "kn",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkannada-in-language-pack\u002F"
+      },
+      "417204": {
+        "id": 417204,
+        "default_locale": "ko",
+        "guid": "langpack-ko@firefox.mozilla.org",
+        "name": "Korean (KR) Language Pack",
+        "slug": "korean-kr-language-pack",
+        "target_locale": "ko",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkorean-kr-language-pack\u002F"
+      },
+      "417210": {
+        "id": 417210,
+        "default_locale": "lt",
+        "guid": "langpack-lt@firefox.mozilla.org",
+        "name": "Lietuvių Language Pack",
+        "slug": "lietuvių-language-pack",
+        "target_locale": "lt",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flietuvi%C5%B3-language-pack\u002F"
+      },
+      "417212": {
+        "id": 417212,
+        "default_locale": "en-US",
+        "guid": "langpack-mai@firefox.mozilla.org",
+        "name": "Maithili Language Pack",
+        "slug": "maithili-language-pack",
+        "target_locale": "mai",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmaithili-language-pack\u002F"
+      },
+      "417214": {
+        "id": 417214,
+        "default_locale": "mk",
+        "guid": "langpack-mk@firefox.mozilla.org",
+        "name": "Македонски Language Pack",
+        "slug": "македонски-language-pack",
+        "target_locale": "mk",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8-language-pack\u002F"
+      },
+      "417216": {
+        "id": 417216,
+        "default_locale": "ml",
+        "guid": "langpack-ml@firefox.mozilla.org",
+        "name": "Malayalam (IN) Language Pack",
+        "slug": "malayalam-in-language-pack",
+        "target_locale": "ml",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmalayalam-in-language-pack\u002F"
+      },
+      "417218": {
+        "id": 417218,
+        "default_locale": "en-US",
+        "guid": "langpack-mr@firefox.mozilla.org",
+        "name": "Marathi Language Pack",
+        "slug": "marathi-language-pack",
+        "target_locale": "mr",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmarathi-language-pack\u002F"
+      },
+      "417220": {
+        "id": 417220,
+        "default_locale": "nb-NO",
+        "guid": "langpack-nb-NO@firefox.mozilla.org",
+        "name": "Norsk bokmål (NO) Language Pack",
+        "slug": "norsk-bokmål-no-language-pa",
+        "target_locale": "nb-NO",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnorsk-bokm%C3%A5l-no-language-pa\u002F"
+      },
+      "417222": {
+        "id": 417222,
+        "default_locale": "nl",
+        "guid": "langpack-nl@firefox.mozilla.org",
+        "name": "Nederlands (NL) Language Pack",
+        "slug": "nederlands-nl-language-pack",
+        "target_locale": "nl",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnederlands-nl-language-pack\u002F"
+      },
+      "417224": {
+        "id": 417224,
+        "default_locale": "nn-NO",
+        "guid": "langpack-nn-NO@firefox.mozilla.org",
+        "name": "Norsk nynorsk (NO) Language Pack",
+        "slug": "norsk-nynorsk-no-language-p",
+        "target_locale": "nn-NO",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fnorsk-nynorsk-no-language-p\u002F"
+      },
+      "417226": {
+        "id": 417226,
+        "default_locale": "en-US",
+        "guid": "langpack-or@firefox.mozilla.org",
+        "name": "Oriya (OR) Language Pack",
+        "slug": "oriya-or-language-pack",
+        "target_locale": "or",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Foriya-or-language-pack\u002F"
+      },
+      "417228": {
+        "id": 417228,
+        "default_locale": "pa-IN",
+        "guid": "langpack-pa-IN@firefox.mozilla.org",
+        "name": "Punjabi (Gurmukhi) Language Pack",
+        "slug": "punjabi-gurmukhi-language-p",
+        "target_locale": "pa-IN",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fpunjabi-gurmukhi-language-p\u002F"
+      },
+      "417230": {
+        "id": 417230,
+        "default_locale": "pl",
+        "guid": "langpack-pl@firefox.mozilla.org",
+        "name": "Polski Language Pack",
+        "slug": "polski-language-pack",
+        "target_locale": "pl",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fpolski-language-pack\u002F"
+      },
+      "417232": {
+        "id": 417232,
+        "default_locale": "pt-PT",
+        "guid": "langpack-pt-PT@firefox.mozilla.org",
+        "name": "Português Portugal Language Pack",
+        "slug": "português-portugal-language",
+        "target_locale": "pt-PT",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fportugu%C3%AAs-portugal-language\u002F"
+      },
+      "417234": {
+        "id": 417234,
+        "default_locale": "en-US",
+        "guid": "langpack-rm@firefox.mozilla.org",
+        "name": "Rumantsch Language Pack",
+        "slug": "rumantsch-language-pack",
+        "target_locale": "rm",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Frumantsch-language-pack\u002F"
+      },
+      "417236": {
+        "id": 417236,
+        "default_locale": "ru",
+        "guid": "langpack-ru@firefox.mozilla.org",
+        "name": "Russian (RU) Language Pack",
+        "slug": "russian-ru-language-pack",
+        "target_locale": "ru",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Frussian-ru-language-pack\u002F"
+      },
+      "417238": {
+        "id": 417238,
+        "default_locale": "sk",
+        "guid": "langpack-sk@firefox.mozilla.org",
+        "name": "Slovak (SK) Language Pack",
+        "slug": "slovak-sk-language-pack",
+        "target_locale": "sk",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fslovak-sk-language-pack\u002F"
+      },
+      "417240": {
+        "id": 417240,
+        "default_locale": "sl",
+        "guid": "langpack-sl@firefox.mozilla.org",
+        "name": "Slovenski jezik Language Pack",
+        "slug": "slovenski-jezik-language-pa",
+        "target_locale": "sl",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fslovenski-jezik-language-pa\u002F"
+      },
+      "417242": {
+        "id": 417242,
+        "default_locale": "en-US",
+        "guid": "langpack-son@firefox.mozilla.org",
+        "name": "Soŋay Language Pack",
+        "slug": "soŋay-language-pack",
+        "target_locale": "son",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fso%C5%8Bay-language-pack\u002F"
+      },
+      "417244": {
+        "id": 417244,
+        "default_locale": "sq",
+        "guid": "langpack-sq@firefox.mozilla.org",
+        "name": "Shqip Language Pack",
+        "slug": "shqip-language-pack",
+        "target_locale": "sq",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fshqip-language-pack\u002F"
+      },
+      "417246": {
+        "id": 417246,
+        "default_locale": "sr",
+        "guid": "langpack-sr@firefox.mozilla.org",
+        "name": "српски (sr) Language Pack",
+        "slug": "српски-sr-language-pack",
+        "target_locale": "sr",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D1%81%D1%80%D0%BF%D1%81%D0%BA%D0%B8-sr-language-pack\u002F"
+      },
+      "417248": {
+        "id": 417248,
+        "default_locale": "sv-SE",
+        "guid": "langpack-sv-SE@firefox.mozilla.org",
+        "name": "Svenska (SE) Language Pack",
+        "slug": "svenska-se-language-pack",
+        "target_locale": "sv-SE",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fsvenska-se-language-pack\u002F"
+      },
+      "417250": {
+        "id": 417250,
+        "default_locale": "ta",
+        "guid": "langpack-ta@firefox.mozilla.org",
+        "name": "Tamil Language Pack",
+        "slug": "tamil-language-pack-1",
+        "target_locale": "ta",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftamil-language-pack-1\u002F"
+      },
+      "417252": {
+        "id": 417252,
+        "default_locale": "th",
+        "guid": "langpack-th@firefox.mozilla.org",
+        "name": "Thai Language Pack",
+        "slug": "thai-language-pack",
+        "target_locale": "th",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fthai-language-pack\u002F"
+      },
+      "417254": {
+        "id": 417254,
+        "default_locale": "tr",
+        "guid": "langpack-tr@firefox.mozilla.org",
+        "name": "Türkçe (TR) Language Pack",
+        "slug": "türkçe-tr-language-pack",
+        "target_locale": "tr",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ft%C3%BCrk%C3%A7e-tr-language-pack\u002F"
+      },
+      "417256": {
+        "id": 417256,
+        "default_locale": "zh-CN",
+        "guid": "langpack-zh-CN@firefox.mozilla.org",
+        "name": "Chinese Simplified (zh-CN) Language Pack",
+        "slug": "chinese-simplified-zh-cn-la",
+        "target_locale": "zh-CN",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fchinese-simplified-zh-cn-la\u002F"
+      },
+      "417258": {
+        "id": 417258,
+        "default_locale": "zh-TW",
+        "guid": "langpack-zh-TW@firefox.mozilla.org",
+        "name": "Traditional Chinese (zh-TW) Language Pack",
+        "slug": "traditional-chinese-zh-tw-l",
+        "target_locale": "zh-TW",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftraditional-chinese-zh-tw-l\u002F"
+      },
+      "417448": {
+        "id": 417448,
+        "default_locale": "en-US",
+        "guid": "langpack-ar@firefox.mozilla.org",
+        "name": "العربية Language Pack",
+        "slug": "العربية-language-pack",
+        "target_locale": "ar",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-language-pack\u002F"
+      },
+      "417452": {
+        "id": 417452,
+        "default_locale": "en-US",
+        "guid": "langpack-bn-BD@firefox.mozilla.org",
+        "name": "বাংলা (বাংলাদেশ) Language pack",
+        "slug": "ইরজ-যকতরষটর-language-pack",
+        "target_locale": "bn-BD",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%E0%A6%87%E0%A6%B0%E0%A6%9C-%E0%A6%AF%E0%A6%95%E0%A6%A4%E0%A6%B0%E0%A6%B7%E0%A6%9F%E0%A6%B0-language-pack\u002F"
+      },
+      "417456": {
+        "id": 417456,
+        "default_locale": "en-US",
+        "guid": "langpack-fa@firefox.mozilla.org",
+        "name": "‪Persian (IR) — ‫فارسی (ایران)‬‬ Language Pack",
+        "slug": "persian-ir-فارسی-ایران-lang",
+        "target_locale": "fa",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fpersian-ir-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-lang\u002F"
+      },
+      "417458": {
+        "id": 417458,
+        "default_locale": "en-US",
+        "guid": "langpack-ff@firefox.mozilla.org",
+        "name": "Pulaar Fulfulde Language Pack",
+        "slug": "pulaar-fulfulde-language-pa",
+        "target_locale": "ff",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fpulaar-fulfulde-language-pa\u002F"
+      },
+      "417460": {
+        "id": 417460,
+        "default_locale": "en-US",
+        "guid": "langpack-gd@firefox.mozilla.org",
+        "name": "Gàidhlig Language Pack",
+        "slug": "gàidhlig-language-pack",
+        "target_locale": "gd",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fg%C3%A0idhlig-language-pack\u002F"
+      },
+      "451204": {
+        "id": 451204,
+        "default_locale": "en-US",
+        "guid": "pt-BR-1971@dictionaries.addons.mozilla.org",
+        "name": "Brazilian Portuguese Dictionary (Former Spelling)",
+        "slug": "ortografia-br",
+        "target_locale": "pt-BR",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fortografia-br\u002F"
+      },
+      "461570": {
+        "id": 461570,
+        "default_locale": "en-US",
+        "guid": "marcoagpinto@mail.telepac.pt",
+        "name": "British English Dictionary (Marco Pinto)",
+        "slug": "british-english-dictionary-2",
+        "target_locale": "en-GB",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbritish-english-dictionary-2\u002F"
+      },
+      "474623": {
+        "id": 474623,
+        "default_locale": "sv-SE",
+        "guid": "swedish@dictionaries.addons.mozilla.org",
+        "name": "Svenska Fria Ordlistan",
+        "slug": "görans-hemmasnickrade-ordli",
+        "target_locale": "sv-SE",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fg%C3%B6rans-hemmasnickrade-ordli\u002F"
+      },
+      "474714": {
+        "id": 474714,
+        "default_locale": "fr",
+        "guid": "bm-ML@dictionaries.addons.mozilla.org",
+        "name": "Bambara\u002FBamanakan",
+        "slug": "bambarabamanakan",
+        "target_locale": "bm-ML",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbambarabamanakan\u002F"
+      },
+      "476993": {
+        "id": 476993,
+        "default_locale": "en-US",
+        "guid": "lo@dictionaries.addons.mozilla.org",
+        "name": "Lao Spellchecking Dictionary",
+        "slug": "lao-spellchecking-dictionar",
+        "target_locale": "lo",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flao-spellchecking-dictionar\u002F"
+      },
+      "482428": {
+        "id": 482428,
+        "default_locale": "fr",
+        "guid": "br@dictionaries.addons.mozilla.org",
+        "name": "Difazier An Drouizig",
+        "slug": "difazier-an-drouizig",
+        "target_locale": "br",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdifazier-an-drouizig\u002F"
+      },
+      "504940": {
+        "id": 504940,
+        "default_locale": "en-US",
+        "guid": "langpack-ms@firefox.mozilla.org",
+        "name": "Bahasa Melayu (ms) Language Pack",
+        "slug": "bahasa-melayu-ms-language-pack",
+        "target_locale": "ms",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbahasa-melayu-ms-language-pack\u002F"
+      },
+      "522582": {
+        "id": 522582,
+        "default_locale": "en-US",
+        "guid": "as-IN@dictionaries.addons.mozilla.org",
+        "name": "Lachit - an Assamese Spell Checker",
+        "slug": "assamese-spell-checker",
+        "target_locale": "as",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fassamese-spell-checker\u002F"
+      },
+      "531908": {
+        "id": 531908,
+        "default_locale": "en-US",
+        "guid": "langpack-hsb@firefox.mozilla.org",
+        "name": "Hornjoserbšćina Language Pack",
+        "slug": "hornjoserbšćina-language-pack",
+        "target_locale": "hsb",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fhornjoserb%C5%A1%C4%87ina-language-pack\u002F"
+      },
+      "535478": {
+        "id": 535478,
+        "default_locale": "en-US",
+        "guid": "langpack-my@firefox.mozilla.org",
+        "name": "Burmese (MY) Language Pack",
+        "slug": "burmese-my-language-pack",
+        "target_locale": "my",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fburmese-my-language-pack\u002F"
+      },
+      "540360": {
+        "id": 540360,
+        "default_locale": "en-US",
+        "guid": "langpack-dsb@firefox.mozilla.org",
+        "name": "Dolnoserbšćina Language Pack",
+        "slug": "dolnoserbšćina-language-pack",
+        "target_locale": "dsb",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdolnoserb%C5%A1%C4%87ina-language-pack\u002F"
+      },
+      "550478": {
+        "id": 550478,
+        "default_locale": "az",
+        "guid": "langpack-az@firefox.mozilla.org",
+        "name": "Azerbaijani (AZ) Language Pack",
+        "slug": "azerbaijani-az-language-pack",
+        "target_locale": "az",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fazerbaijani-az-language-pack\u002F"
+      },
+      "588304": {
+        "id": 588304,
+        "default_locale": "en-US",
+        "guid": "langpack-uz@firefox.mozilla.org",
+        "name": "Uzbek Language Pack",
+        "slug": "uzbek-language-pack",
+        "target_locale": "uz",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fuzbek-language-pack\u002F"
+      },
+      "630798": {
+        "id": 630798,
+        "default_locale": "en-US",
+        "guid": "or@sipun.org",
+        "name": "Odia Spelling Checker",
+        "slug": "odia-spelling-checker",
+        "target_locale": "or-IN",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fodia-spelling-checker\u002F"
+      },
+      "671907": {
+        "id": 671907,
+        "default_locale": "en-US",
+        "guid": "fa-IR@dictionaries.addons.mozilla.org",
+        "name": "Lilak, Persian Spell Checker Dictionary",
+        "slug": "lilak-persian-dictionary",
+        "target_locale": "fa-IR",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Flilak-persian-dictionary\u002F"
+      },
+      "677644": {
+        "id": 677644,
+        "default_locale": "en-US",
+        "guid": "@unitedstatesenglishdictionary",
+        "name": "English United States Dictionary",
+        "slug": "us-english-dictionary",
+        "target_locale": "en-US",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fus-english-dictionary\u002F"
+      },
+      "684303": {
+        "id": 684303,
+        "default_locale": "en-US",
+        "guid": "ie@os.dictionaries.addons.mozilla.org",
+        "name": "Interlingue Spell Checker",
+        "slug": "interlingue-spell-checker",
+        "target_locale": "ie",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Finterlingue-spell-checker\u002F"
+      },
+      "690253": {
+        "id": 690253,
+        "default_locale": "en-US",
+        "guid": "langpack-gn@firefox.mozilla.org",
+        "name": "Guarani (Paraguay) Language Pack",
+        "slug": "guarani-paraguay-language-pack",
+        "target_locale": "gn",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fguarani-paraguay-language-pack\u002F"
+      },
+      "694745": {
+        "id": 694745,
+        "default_locale": "it",
+        "guid": "vec@dictionaries.addons.mozilla.org",
+        "name": "Venetan",
+        "slug": "dithionario-de-lengua-vèneta",
+        "target_locale": "vec",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdithionario-de-lengua-v%C3%A8neta\u002F"
+      },
+      "707889": {
+        "id": 707889,
+        "default_locale": "en-US",
+        "guid": "langpack-cak@firefox.mozilla.org",
+        "name": "Kaqchikel (Guatemala) Language Pack",
+        "slug": "kaqchikel-guatemala-language-p",
+        "target_locale": "cak",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fkaqchikel-guatemala-language-p\u002F"
+      },
+      "774876": {
+        "id": 774876,
+        "default_locale": "ka",
+        "guid": "langpack-ka@firefox.mozilla.org",
+        "name": "Georgian (ქართული) Language Pack",
+        "slug": "georgian-ქართული-language-pack",
+        "target_locale": "ka",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgeorgian-%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%A3%E1%83%9A%E1%83%98-language-pack\u002F"
+      },
+      "774877": {
+        "id": 774877,
+        "default_locale": "kab",
+        "guid": "langpack-kab@firefox.mozilla.org",
+        "name": "Taqbaylit Language Pack",
+        "slug": "taqbaylit-language-pack",
+        "target_locale": "kab",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Ftaqbaylit-language-pack\u002F"
+      },
+      "807408": {
+        "id": 807408,
+        "default_locale": "ur",
+        "guid": "langpack-ur@firefox.mozilla.org",
+        "name": "اردو (پاکستان) Language Pack",
+        "slug": "اردو-پاکستان-language-pack",
+        "target_locale": "ur",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%D8%A7%D8%B1%D8%AF%D9%88-%D9%BE%D8%A7%DA%A9%D8%B3%D8%AA%D8%A7%D9%86-language-pack\u002F"
+      },
+      "812779": {
+        "id": 812779,
+        "default_locale": "en-US",
+        "guid": "az@dictionaries.addons.mozilla.org",
+        "name": "Azerbaijani Spellchecker",
+        "slug": "azerbaijani-spellchecker",
+        "target_locale": "az",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fazerbaijani-spellchecker\u002F"
+      },
+      "898419": {
+        "id": 898419,
+        "default_locale": "es",
+        "guid": "es_cl@dictionaries.addons.mozilla.org",
+        "name": "Diccionario de Español\u002FChile",
+        "slug": "diccionario-de-español-chile",
+        "target_locale": "es-CL",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fdiccionario-de-espa%C3%B1ol-chile\u002F"
+      },
+      "900252": {
+        "id": 900252,
+        "default_locale": "ka",
+        "guid": "ka-GE@dictionaries.addons.mozilla.org",
+        "name": "ქართული ორთოგრაფიული ლექსიკონი",
+        "slug": "georgian-dictionary",
+        "target_locale": "ka",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fgeorgian-dictionary\u002F"
+      },
+      "926028": {
+        "id": 926028,
+        "default_locale": "ne-NP",
+        "guid": "langpack-ne-NP@firefox.mozilla.org",
+        "name": "अंग्रेजी (US) Language Pack",
+        "slug": "अ-ग-र-ज-ne-np-language-pack",
+        "target_locale": "ne-NP",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002F%E0%A4%85-%E0%A4%97-%E0%A4%B0-%E0%A4%9C-ne-np-language-pack\u002F"
+      },
+      "950375": {
+        "id": 950375,
+        "default_locale": "ia",
+        "guid": "langpack-ia@firefox.mozilla.org",
+        "name": "Interlingua Language Pack",
+        "slug": "interlingua-language-pack",
+        "target_locale": "ia",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Finterlingua-language-pack\u002F"
+      },
+      "963792": {
+        "id": 963792,
+        "default_locale": "en-US",
+        "guid": "langpack-oc@firefox.mozilla.org",
+        "name": "Occitan (lengadocian) Language Pack",
+        "slug": "occitan-language-pack",
+        "target_locale": "oc",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Foccitan-language-pack\u002F"
+      },
+      "983643": {
+        "id": 983643,
+        "default_locale": "en-US",
+        "guid": "langpack-en-CA@firefox.mozilla.org",
+        "name": "English (CA) Language Pack",
+        "slug": "english-ca-language-pack",
+        "target_locale": "en-CA",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fenglish-ca-language-pack\u002F"
+      },
+      "1013418": {
+        "id": 1013418,
+        "default_locale": "ru",
+        "guid": "helvann-ru-dictionaries@thecommunity.ru",
+        "name": "Russian-English Dictionary",
+        "slug": "russian-english-dictionary",
+        "target_locale": "ru-EN",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Frussian-english-dictionary\u002F"
+      },
+      "1017008": {
+        "id": 1017008,
+        "default_locale": "en-US",
+        "guid": "be_BY@dictionaries.addons.mozilla.org",
+        "name": "Belarusian Spellcheck Dictionary",
+        "slug": "belarusian-spellcheck-webext",
+        "target_locale": "be",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbelarusian-spellcheck-webext\u002F"
+      },
+      "1018058": {
+        "id": 1018058,
+        "default_locale": "en-US",
+        "guid": "@mxspanishdictionary",
+        "name": "Spanish (Mexico) Dictionary",
+        "slug": "spanish-mexico-dictionary",
+        "target_locale": "es-MX",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fspanish-mexico-dictionary\u002F"
+      },
+      "1469599": {
+        "id": 1469599,
+        "default_locale": "sv-SE",
+        "guid": "swedish-fi@dictionaries.addons.mozilla.org",
+        "name": "Svensk (Finland) Ordlista",
+        "slug": "swedish-finland-dictionary",
+        "target_locale": "sv-FI",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fswedish-finland-dictionary\u002F"
+      },
+      "1473406": {
+        "id": 1473406,
+        "default_locale": "en-US",
+        "guid": "mk-MK-Latin@dictionaries.addons.mozilla.org",
+        "name": "Macedonian (Македонски) Spellchecker - Latin",
+        "slug": "macedonian-spellchecker-latin",
+        "target_locale": "mk",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fmacedonian-spellchecker-latin\u002F"
+      },
+      "1474684": {
+        "id": 1474684,
+        "default_locale": "sk",
+        "guid": "sk2@dictionaries.addons.mozilla.org",
+        "name": "Slovenská kontrola preklepov (bez diakritiky)",
+        "slug": "sk-sk-ascii_spellchecking",
+        "target_locale": "sk-SK-Ascii",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fsk-sk-ascii_spellchecking\u002F"
+      },
+      "1819995": {
+        "id": 1819995,
+        "default_locale": "it",
+        "guid": "lafricain79@gmail.com",
+        "name": "Burmese Spellchecker",
+        "slug": "burmese-spellchecker",
+        "target_locale": "bur",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fburmese-spellchecker\u002F"
+      },
+      "2080192": {
+        "id": 2080192,
+        "default_locale": "ru",
+        "guid": "ce@dictionaries.addons.mozilla.org",
+        "name": "Чеченский словарь проверки орфографии",
+        "slug": "chechen-noxchin",
+        "target_locale": "ce",
+        "type": "dictionary",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fchechen-noxchin\u002F"
+      },
+      "2247776": {
+        "id": 2247776,
+        "default_locale": "en-US",
+        "guid": "langpack-bn@firefox.mozilla.org",
+        "name": "Bengali (Bangladesh) Language Pack",
+        "slug": "bengali-language-pack",
+        "target_locale": "bn",
+        "type": "language",
+        "url": "https:\u002F\u002Faddons.mozilla.org\u002Fru\u002Ffirefox\u002Faddon\u002Fbengali-language-pack\u002F"
+      }
+    }
+  },
+  "recommendations": {
+    "byGuid": {}
+  },
+  "redirectTo": {
+    "url": null,
+    "status": null
+  },
+  "reviews": {
+    "permissions": {},
+    "byAddon": {},
+    "byId": {},
+    "byUserId": {},
+    "latestUserReview": {},
+    "groupedRatings": {},
+    "view": {},
+    "loadingForSlug": {}
+  },
+  "search": {
+    "count": 0,
+    "filters": null,
+    "loading": false,
+    "pageSize": null,
+    "results": []
+  },
+  "survey": {
+    "wasDismissed": false
+  },
+  "uiState": {},
+  "userAbuseReports": {
+    "byUserId": {}
+  },
+  "users": {
+    "currentUserID": null,
+    "byID": {},
+    "byUsername": {},
+    "isUpdating": false,
+    "userPageBeingViewed": {
+      "loading": false,
+      "userId": null
+    },
+    "isUnsubscribedFor": {}
+  },
+  "versions": {
+    "byId": {},
+    "bySlug": {}
+  },
+  "viewContext": {
+    "context": "VIEW_CONTEXT_LANGUAGE_TOOLS"
+  },
+  "router": {
+    "location": {
+      "pathname": "\u002Fru\u002Ffirefox\u002Flanguage-tools\u002F",
+      "search": "",
+      "hash": "",
+      "key": "4b4jpp",
+      "query": {}
+    },
+    "action": "POP"
+  }
+}
