@@ -4,6 +4,7 @@ import findSpecificCfgFn from "./cfg/findSpecificCfgFn.js";
 
 let elementMutator;
 let optHelper;
+let stop;
 const start = async () => {
     console.debug('app#start is started');
     optHelper = new ContentJsOptHelper();
@@ -16,12 +17,18 @@ const start = async () => {
 
     console.debug('app#start specificCfg', specificCfg);
 
-    elementMutator = new ElementMutator(specificCfg.elementMutatorCfg).start();
+    if (specificCfg.isOn) {
+        elementMutator = new ElementMutator(specificCfg.elementMutatorCfg).start();
+    } else {
+        stop();
+    }
     console.debug('app#start is ended', optHelper, elementMutator);
 };
-const stop = () => {
-    elementMutator.stop();
-    elementMutator = null;
+stop = () => {
+    if (elementMutator) {
+        elementMutator.stop();
+        elementMutator = null;
+    }
     optHelper = null;
 };
 const app = async () => {

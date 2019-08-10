@@ -1,6 +1,6 @@
 import app from "./app/app.js";
 
-console.debug('main() will be started');
+console.debug('main() will be started 1234');
 
 const main = () => app();
 
