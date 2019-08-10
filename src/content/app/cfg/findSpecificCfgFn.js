@@ -7,10 +7,12 @@ const findSpecificCfgFn = CFG => {
         || specificCfgs.find(specificCfg => specificCfg.href != null && specificCfg.href === location.href)
         // https://www.example** === https://www.example.com
         || specificCfgs.find(specificCfg =>
-            specificCfg.href != null && specificCfg.href.endsWith('**') && location.href.startsWith(specificCfg.href))
+            specificCfg.href != null && specificCfg.href.endsWith('**')
+            && location.href.startsWith(specificCfg.href.slice(0, -2)))
         // **.example.com === https://www.example.com
         || specificCfgs.find(specificCfg =>
-            specificCfg.href != null && specificCfg.href.startsWith('**') && location.href.endsWith(specificCfg.href))
+            specificCfg.href != null && specificCfg.href.startsWith('**')
+            && location.href.endsWith(specificCfg.href.slice(2)))
         || CFG.default;
 };
 
