@@ -3,12 +3,25 @@ import findMozDictsFn from '../../../lib/common/findMozDictsFn.js';
 import OptHelperImpl from '../../../lib/background/OptHelper/OptHelperImpl.js';
 import browserApi from '../../../lib/common/browserApi.js';
 
+export interface Tile {
+    color: string;
+    cols: number;
+    rows: number;
+    text: string;
+}
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+    tiles: Tile[] = [
+        {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
+        {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+        {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+        {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+    ];
     cfg = null;
     optHelperImpl = new OptHelperImpl();
     port = browserApi.runtime.connect({name: 'OptHelper-cfg-port'});
