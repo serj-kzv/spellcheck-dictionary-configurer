@@ -20,6 +20,14 @@
                           name="cfg"></textarea>
             </mat-form-field>
         </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+            <mat-form-field style="width: 100%;">
+                <mat-label>Font size</mat-label>
+                <mat-select #selectDictControl value="16px" (selectionChange)="selectDict()">
+                    <mat-option *ngFor="let dict of dicts">{{dict.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </mat-grid-tile>
     </mat-grid-list>
 
 </div>
