@@ -8,6 +8,7 @@ import {MatFormFieldModule} from "@angular/material";
 import {MatInputModule} from "@angular/material";
 import {MatSelectModule} from "@angular/material";
 import {MatCardModule} from "@angular/material";
+import {MatSlideToggleModule} from "@angular/material";
 
 @NgModule({
     declarations: [],
@@ -25,6 +26,7 @@ import {MatCardModule} from "@angular/material";
         MatInputModule,
         MatSelectModule,
         MatCardModule,
+        MatSlideToggleModule,
     ],
     exports: [
         // modules
@@ -40,6 +42,7 @@ import {MatCardModule} from "@angular/material";
         MatInputModule,
         MatSelectModule,
         MatCardModule,
+        MatSlideToggleModule,
     ]
 })
 export class SharedModule {

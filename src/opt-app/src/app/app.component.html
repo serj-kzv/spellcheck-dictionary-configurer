@@ -1,17 +1,21 @@
 <div>
-    <mat-grid-list cols="1" rowHeight="100px">
+    <mat-grid-list cols="4" rowHeight="65px">
         <mat-grid-tile
                 [colspan]="1"
-                [rowspan]="1"
-                [style.background]="'white'">
+                [rowspan]="1">
             <button mat-raised-button (click)="saveBtnAction()">save</button>
             <button mat-raised-button (click)="resetBtnAction()">reset</button>
         </mat-grid-tile>
-    </mat-grid-list>
-    <mat-grid-list cols="2" rowHeight="500px">
-        <mat-grid-tile [colspan]="1">
+        <mat-grid-tile
+                [colspan]="1"
+                [rowspan]="1">
+            qwe2
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="8">
             <mat-form-field style="width: 100%;">
-                <mat-label>Configuration:</mat-label>
+                <mat-label>Configuration</mat-label>
                 <textarea matInput
                           cdkTextareaAutosize
                           cdkAutosizeMinRows="1"
@@ -21,9 +25,11 @@
                 ></textarea>
             </mat-form-field>
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="1">
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
             <mat-form-field style="width: 100%;">
-                <mat-label>Dictionaries:</mat-label>
+                <mat-label>Dictionary</mat-label>
                 <mat-select #selectDictControl [(value)]="activeDict" (selectionChange)="selectDict()">
                     <mat-option [value]=null>default</mat-option>
                     <mat-option *ngFor="let dict of dicts" [value]="dict">
@@ -31,29 +37,64 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
             <mat-form-field style="width: 100%;">
-                <mat-label>Tabs:</mat-label>
-                <mat-select #selectTabControl [(value)]="activeTab">
-                    <mat-option [value]=null>all tabs</mat-option>
+                <input matInput disabled placeholder="Name" value="{{activeDict?.name}}">
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
+            <mat-form-field style="width: 100%;">
+                <input matInput disabled placeholder="Default locale" value="{{activeDict?.default_locale}}">
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
+            <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Target locale" value="{{activeDict?.target_locale}}">
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
+            <mat-form-field style="width: 100%;">
+                <mat-label>Address</mat-label>
+                <mat-select #selectAddressControl [(value)]="activeTab">
+                    <mat-option [value]=null>Address</mat-option>
                     <mat-option *ngFor="let tab of tabs" [value]="tab">
                         {{tab.url}} (title: {{tab.title}})
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title>{{activeDict?.name}}</mat-card-title>
-                    <mat-card-subtitle>default: {{activeDict?.default_locale}}</mat-card-subtitle>
-                    <mat-card-subtitle>target: {{activeDict?.target_locale}}</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title>{{activeTab?.url}}</mat-card-title>
-                    <mat-card-subtitle>title: {{activeTab?.title}}</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
+            <mat-form-field style="width: 100%;">
+                <input matInput disabled placeholder="Title" value="{{activeTab?.title}}">
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
+            <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Address" value="{{activeTab?.url}}">
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile
+                [colspan]="2"
+                [rowspan]="1">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Address</mat-radio-button>
+                <mat-radio-button value="2">Address (starts with)</mat-radio-button>
+                <mat-radio-button value="3">Address (ends with)</mat-radio-button>
+                <mat-radio-button value="4">Domain</mat-radio-button>
+            </mat-radio-group>
         </mat-grid-tile>
     </mat-grid-list>
-
 </div>
