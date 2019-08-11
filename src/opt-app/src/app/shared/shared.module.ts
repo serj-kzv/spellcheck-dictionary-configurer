@@ -7,6 +7,7 @@ import {TextFieldModule} from '@angular/cdk/text-field';
 import {MatFormFieldModule} from "@angular/material";
 import {MatInputModule} from "@angular/material";
 import {MatSelectModule} from "@angular/material";
+import {MatCardModule} from "@angular/material";
 
 @NgModule({
     declarations: [],
@@ -23,6 +24,7 @@ import {MatSelectModule} from "@angular/material";
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
+        MatCardModule,
     ],
     exports: [
         // modules
@@ -37,6 +39,7 @@ import {MatSelectModule} from "@angular/material";
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
+        MatCardModule,
     ]
 })
 export class SharedModule {

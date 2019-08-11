@@ -12,12 +12,30 @@ export class AppComponent implements OnInit {
     cfg = null;
     optHelperImpl = new OptHelperImpl();
     port = browserApi.runtime.connect({name: 'OptHelper-cfg-port'});
-    dicts = null;
+    dicts = [];
     activeDict = null;
+    tabs = [];
+    activeTab = null;
 
     aInitFn = async () => {
         this.cfg = JSON.stringify(await this.optHelperImpl.read(), null, 2);
-        this.dicts = await findMozDictsFn(browserApi.runtime.getURL('resource/dicts.json'));
+        this.dicts = (await findMozDictsFn(browserApi.runtime.getURL('resource/dicts.json')))
+            .sort((a, b) => {
+                const nameA = a.name.toUpperCase();
+                const nameB = b.name.toUpperCase();
+
+                if (nameA < nameB) {
+                    return -1;
+                }
+                if (nameA > nameB) {
+                    return 1;
+                }
+
+                // names must be equal
+                return 0;
+            });
+        this.tabs = await browserApi.tabs.query({});
+        console.debug(await browserApi.tabs.query({}));
         console.debug(await browserApi.management.getAll());
         console.debug(await browserApi.runtime.getBrowserInfo());
         console.debug(await browserApi.runtime.getPlatformInfo());

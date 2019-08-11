@@ -11,22 +11,48 @@
     <mat-grid-list cols="2" rowHeight="500px">
         <mat-grid-tile [colspan]="1">
             <mat-form-field style="width: 100%;">
-                <mat-label>Autosize textarea</mat-label>
+                <mat-label>Configuration:</mat-label>
                 <textarea matInput
                           cdkTextareaAutosize
                           cdkAutosizeMinRows="1"
                           cdkAutosizeMaxRows="25"
                           [(ngModel)]="cfg"
-                          name="cfg"></textarea>
+                          name="cfg"
+                ></textarea>
             </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="1">
             <mat-form-field style="width: 100%;">
-                <mat-label>Font size</mat-label>
-                <mat-select #selectDictControl value="16px" (selectionChange)="selectDict()">
-                    <mat-option *ngFor="let dict of dicts">{{dict.name}}</mat-option>
+                <mat-label>Dictionaries:</mat-label>
+                <mat-select #selectDictControl [(value)]="activeDict" (selectionChange)="selectDict()">
+                    <mat-option [value]=null>default</mat-option>
+                    <mat-option *ngFor="let dict of dicts" [value]="dict">
+                        {{dict.name}} (default: {{dict.default_locale}}; target: {{dict.target_locale}})
+                    </mat-option>
                 </mat-select>
             </mat-form-field>
+            <mat-form-field style="width: 100%;">
+                <mat-label>Tabs:</mat-label>
+                <mat-select #selectTabControl [(value)]="activeTab">
+                    <mat-option [value]=null>all tabs</mat-option>
+                    <mat-option *ngFor="let tab of tabs" [value]="tab">
+                        {{tab.url}} (title: {{tab.title}})
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{activeDict?.name}}</mat-card-title>
+                    <mat-card-subtitle>default: {{activeDict?.default_locale}}</mat-card-subtitle>
+                    <mat-card-subtitle>target: {{activeDict?.target_locale}}</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{activeTab?.url}}</mat-card-title>
+                    <mat-card-subtitle>title: {{activeTab?.title}}</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
         </mat-grid-tile>
     </mat-grid-list>
 
