@@ -3,7 +3,7 @@
         <mat-expansion-panel [expanded]="true" hideToggle>
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    Rule
+                    Rule ({{idx === -1 ? 'global' : '#' + (idx + 1) }})
                 </mat-panel-title>
                 <mat-panel-description>
                     Added rule which is used to apply appropriate dictionary to a specific page
@@ -23,14 +23,16 @@
                             <mat-label>Hostname</mat-label>
                             <input [(ngModel)]="specificCfg.hostname"
                                    matInput placeholder="Hostname"
-                                   name="hostname{{idx}}">
+                                   name="hostname{{idx}}"
+                                   [disabled]="idx === -1">
                         </mat-form-field>
                     </mat-list-item>
                     <mat-list-item role="listitem">
                         <mat-form-field style="width: 100%;">
                             <mat-label>Href</mat-label>
                             <input [(ngModel)]="specificCfg.href" matInput placeholder="Href"
-                                   name="href{{idx}}">
+                                   name="href{{idx}}"
+                                   [disabled]="idx === -1">
                         </mat-form-field>
                     </mat-list-item>
                 </mat-list>
