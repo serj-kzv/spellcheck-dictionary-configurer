@@ -3,7 +3,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CoreModule} from "./core/core.module";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatRadioModule} from "@angular/material";
+import {CfgModule} from "./feature/cfg/cfg.module";
 
 @NgModule({
     declarations: [
@@ -13,7 +13,7 @@ import {MatRadioModule} from "@angular/material";
         CoreModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatRadioModule,
+        CfgModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

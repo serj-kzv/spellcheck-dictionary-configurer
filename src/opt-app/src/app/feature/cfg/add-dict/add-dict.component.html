@@ -1,0 +1,106 @@
+<div>
+    <button mat-raised-button (click)="addSpecificCfgBtnAction()">add</button>
+    <button mat-raised-button (click)="cfgService.resetCfg()">reset</button>
+    <mat-accordion style="width: 100%; margin: 0 5px;">
+        <mat-expansion-panel [expanded]="true" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Dictionary picker
+                </mat-panel-title>
+                <mat-panel-description>
+                    Choose a predefined or installed dictionary that you want to apply. You can install a dictionary
+                    from &nbsp;<a href="https://addons.mozilla.org/firefox/language-tools/" target="_blank"> this page
+                </a>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-action-row>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Dictionary</mat-label>
+                    <mat-select [(value)]="activeDict"
+                                (selectionChange)="activeDictChoice.lang=activeDict.target_locale">
+                        <mat-option [value]=defaultDict>default</mat-option>
+                        <mat-option *ngFor="let dict of dicts" [value]="dict">
+                            {{dict.name}} <span style="font-weight: bold;">({{dict.target_locale}})</span>
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </mat-action-row>
+            <mat-action-row>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Name</mat-label>
+                    <input matInput disabled placeholder="Name" value="{{activeDict?.name}}">
+                </mat-form-field>
+            </mat-action-row>
+            <mat-action-row>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Default locale</mat-label>
+                    <input matInput disabled placeholder="Default locale"
+                           value="{{activeDict?.default_locale}}">
+                </mat-form-field>
+            </mat-action-row>
+            <mat-action-row>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Target locale</mat-label>
+                    <input matInput type="text" placeholder="Target locale"
+                           [ngModel]="activeDict.target_locale"
+                           (ngModelChange)="activeDictChoice.lang = $event"
+                    >
+                </mat-form-field>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion style="width: 100%; margin: 0 5px;">
+        <mat-expansion-panel [expanded]="true" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Address picker
+                </mat-panel-title>
+                <mat-panel-description>
+                    Choose an address that you want to be spell checked (you can use patterns)
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-action-row>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Page</mat-label>
+                    <mat-select [(ngModel)]="activeTab"
+                                (selectionChange)="activeDictChoice.address=activeTab.url">
+                        <mat-option [value]="defaultTab">All pages</mat-option>
+                        <mat-option *ngFor="let tab of tabs" [value]="tab">
+                            {{tab.url}} (title: {{tab.title}})
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </mat-action-row>
+            <mat-action-row>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Title</mat-label>
+                    <input matInput disabled placeholder="Title" [value]="activeTab.title">
+                </mat-form-field>
+            </mat-action-row>
+            <mat-action-row>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Address</mat-label>
+                    <input #addressInput="ngModel" [ngModel]="activeTab.url"
+                           (ngModelChange)="activeDictChoice.address = $event"
+                           matInput placeholder="All addresses"
+                           [disabled]="activeTab === defaultTab">
+                </mat-form-field>
+            </mat-action-row>
+            <mat-action-row style="flex-direction: column;">
+                <label id="pick-address-pattern-type-label" style="margin-right: 10px;">Pick address pattern
+                    type
+                </label>
+                <mat-radio-group
+                        aria-labelledby="pick-address-pattern-type-label"
+                        aria-label="Select an option"
+                        [(ngModel)]="activeAddressPattern">
+                    <mat-radio-button *ngFor="let pattern of addressPatternTypes" [value]="pattern.value"
+                                      (change)="addressPatternSelectAction($event)"
+                                      style="margin-right: 10px;">
+                        {{pattern.name}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

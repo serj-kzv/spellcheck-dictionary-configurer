@@ -14,10 +14,10 @@
             {
               "name": "lang",
               "value": "ru-EN"
-            },
-            {
-              "name": "contenteditable"
             }
+          ],
+          "attrDependencies": [
+            "contenteditable"
           ],
           "targets": [
             {

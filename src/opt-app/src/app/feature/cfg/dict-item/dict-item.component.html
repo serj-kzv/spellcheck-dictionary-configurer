@@ -1,0 +1,74 @@
+<form #ruleForm="ngForm">
+    <mat-accordion style="width: 100%; margin: 0 5px;">
+        <mat-expansion-panel [expanded]="true" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Rule
+                </mat-panel-title>
+                <mat-panel-description>
+                    Added rule which is used to apply appropriate dictionary to a specific page
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-action-row style="justify-content: flex-start;">
+                <button [disabled]="idx === -1" mat-raised-button (click)="deleteRuleBtnAction(idx)">Delete</button>
+            </mat-action-row>
+            <mat-action-row style="justify-content: flex-start; flex-direction: column;">
+                <mat-list role="list">
+                    <mat-list-item role="listitem">
+                        <mat-slide-toggle [(ngModel)]="specificCfg.isOn" name="isOn{{idx}}">is on
+                        </mat-slide-toggle>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <mat-form-field style="width: 100%;">
+                            <mat-label>Hostname</mat-label>
+                            <input [(ngModel)]="specificCfg.hostname"
+                                   matInput placeholder="Hostname"
+                                   name="hostname{{idx}}">
+                        </mat-form-field>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <mat-form-field style="width: 100%;">
+                            <mat-label>Href</mat-label>
+                            <input [(ngModel)]="specificCfg.href" matInput placeholder="Href"
+                                   name="href{{idx}}">
+                        </mat-form-field>
+                    </mat-list-item>
+                </mat-list>
+                <ng-container
+                        *ngFor="let mutator of specificCfg.elementMutatorCfg.mutators; index as mutatorIdx">
+                    <mat-list role="list">
+                        <mat-list-item role="listitem" *ngFor="let attr of mutator.attrs">
+                            <ng-container *ngIf="attr.name === 'spellcheck'; else elseSpellcheckBlock">
+                                <mat-slide-toggle [(ngModel)]="attr.value"
+                                                  name="slider{{attr.name}}{{idx}}{{mutatorIdx}}">
+                                    {{attr.name}}
+                                </mat-slide-toggle>
+                            </ng-container>
+                            <ng-template #elseSpellcheckBlock>
+                                <mat-form-field style="width: 100%;">
+                                    <mat-label>{{attr.name}}</mat-label>
+                                    <input [(ngModel)]="attr.value" matInput placeholder="attr.name"
+                                           name="attr{{attr.name}}{{idx}}{{mutatorIdx}}">
+                                </mat-form-field>
+                            </ng-template>
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list role="list">
+                        <mat-list-item role="listitem" *ngFor="let target of mutator.targets">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Target selector</mat-label>
+                                <input [(ngModel)]="target.selector" matInput
+                                       placeholder="target.selector"
+                                       name="target{{target.selector}}{{idx}}{{mutatorIdx}}">
+                            </mat-form-field>
+                            <mat-slide-toggle [(ngModel)]="target.proceedInvisible"
+                                              name="proceedInvisible{{target.selector}}{{idx}}{{mutatorIdx}}">
+                                Proceed invisible
+                            </mat-slide-toggle>
+                        </mat-list-item>
+                    </mat-list>
+                </ng-container>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </mat-accordion>
+</form>

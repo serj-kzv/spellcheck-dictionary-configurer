@@ -1,0 +1,24 @@
+<div>
+    <button mat-raised-button (click)="cfgService.updCfgFromCfgTxt(); cfgService.saveCfg();">save</button>
+    <button mat-raised-button (click)="cfgService.resetCfg()">reset</button>
+    <mat-accordion style="width: 100%; margin: 0 5px;">
+        <mat-expansion-panel [expanded]="true" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Configuration editor
+                </mat-panel-title>
+                <mat-panel-description>
+                    Edit the configuration in text mode
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-action-row>
+            <textarea matInput
+                      cdkTextareaAutosize
+                      cdkAutosizeMinRows="1"
+                      cdkAutosizeMaxRows="25"
+                      [(ngModel)]="cfgService.cfgTxt"
+                      name="cfgTxt"></textarea>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

@@ -1,0 +1,21 @@
+<div *ngIf="cfgService.cfg">
+    <mat-accordion style="width: 100%; margin: 0 5px;">
+        <mat-expansion-panel [expanded]="true" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Rules
+                </mat-panel-title>
+                <mat-panel-description>
+                    Added rules which are used to apply appropriate dictionary to a specific page
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-action-row style="flex-direction: column;">
+                <app-dict-item [specificCfg]="cfgService.cfg.default" [idx]="-1"></app-dict-item>
+            </mat-action-row>
+            <mat-action-row *ngFor="let specificCfg of cfgService.cfg.specificElementMutatorCfgs; index as idx"
+                            style="flex-direction: column;">
+                <app-dict-item [specificCfg]="specificCfg" [idx]="idx"></app-dict-item>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

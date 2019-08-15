@@ -1,6 +1,6 @@
 import ContentJsOptHelper from "../../lib/content/ContentJsOptHelper.js";
 import ElementMutator from "../../lib/content/elementMutator/ElementMutator.js";
-import findSpecificCfgFn from "./cfg/findSpecificCfgFn.js";
+import findSpecificCfgFn from "../../lib/common/findSpecificCfgFn.js";
 
 let elementMutator;
 let optHelper;
@@ -13,7 +13,12 @@ const start = async () => {
 
     console.debug('app#start cfg', cfg);
 
-    const specificCfg = findSpecificCfgFn(cfg);
+    const specificCfg = findSpecificCfgFn(
+        cfg.default,
+        cfg.specificElementMutatorCfgs,
+        location.hostname,
+        location.href
+    );
 
     console.debug('app#start specificCfg', specificCfg);
 

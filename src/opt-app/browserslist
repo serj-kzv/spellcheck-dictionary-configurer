@@ -6,7 +6,30 @@
 #   npx browserslist
 
 > 0.5%
-last 2 versions
-Firefox ESR
+Firefox >= 68
+not Firefox ESR
 not dead
+not last 2 safari versions
+not last 2 Edge versions
+not last 2 chrome versions
+not last 2 Chrome versions
+not last 2 Firefox versions
+not samsung 4
+not samsung 9.2
+not and_chr 75
+not ios_saf 12.2-12.3
+not ios_saf 12.0-12.1
+not ios_saf 11.3-11.4
+not opera 60
+not chrome 73
+not android 4.4.3-4.4.4
+not last 2 IE versions
+not last 2 ie_mob versions
+not last 2 op_mini versions
+not last 2 op_mob versions
+not last 2 baidu versions
+not last 2 kaios versions
+not last 2 and_uc versions
+not last 2 and_qq versions
+not last 2 edge versions
 not IE 9-11 # For IE 9-11 support, remove 'not'.

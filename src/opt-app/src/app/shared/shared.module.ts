@@ -4,11 +4,20 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {TextFieldModule} from '@angular/cdk/text-field';
-import {MatFormFieldModule} from "@angular/material";
-import {MatInputModule} from "@angular/material";
-import {MatSelectModule} from "@angular/material";
-import {MatCardModule} from "@angular/material";
-import {MatSlideToggleModule} from "@angular/material";
+import {
+    MatCardModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatTableModule,
+    MatToolbarModule,
+    MatTreeModule
+} from "@angular/material";
 
 @NgModule({
     declarations: [],
@@ -27,6 +36,13 @@ import {MatSlideToggleModule} from "@angular/material";
         MatSelectModule,
         MatCardModule,
         MatSlideToggleModule,
+        MatExpansionModule,
+        MatIconModule,
+        MatRadioModule,
+        MatToolbarModule,
+        MatTableModule,
+        MatListModule,
+        MatTreeModule,
     ],
     exports: [
         // modules
@@ -43,6 +59,15 @@ import {MatSlideToggleModule} from "@angular/material";
         MatSelectModule,
         MatCardModule,
         MatSlideToggleModule,
+        MatExpansionModule,
+        MatIconModule,
+        MatRadioModule,
+        MatToolbarModule,
+        MatTableModule,
+        MatListModule,
+        MatTreeModule,
+
+        // directives
     ]
 })
 export class SharedModule {

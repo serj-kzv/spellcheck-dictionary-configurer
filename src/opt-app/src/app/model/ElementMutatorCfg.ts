@@ -1,0 +1,3 @@
+interface ElementMutatorCfg {
+    mutators: Mutator[];
+}
