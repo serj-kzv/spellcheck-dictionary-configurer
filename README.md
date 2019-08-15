@@ -1,11 +1,9 @@
 # spellcheck-dictionary-configurer
 
-# Building
+# Building for a production
 ```
 npm install
-npm run prod
-cd ./opt-app
-npm run prod
+npm run prodAll
 ```
 
 # Dependencies updating
@@ -28,12 +26,12 @@ It needs to be replaced by **angular builders** in `angular.json`
 # Warning, it can break some sites and web applications
 The extension modifies attributes' values on web pages.
 The scripts and CSS styles on these pages can depends on these attributes' values
-and change their behaviour accordingly.
+and changes their behaviour accordingly.
 If there is no an awaited attribute value then a page can be broken.
 
 **List of risky sites and web applications**
 1. Text editors, online document viewers
-2. Sites' language, internationalization, localization etc similar systems
+2. Sites' language, internationalization, localization etc
 3. Sites that observe changes of attributes that are changed by the extensions.
-It the case it can create infinity loop, the extensions changes an attribute value,
+It can create infinity loop, the extensions changes an attribute value,
 site gets back the attribute value and it repeats endlessly.
