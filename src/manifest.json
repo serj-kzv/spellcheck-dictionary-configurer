@@ -7,7 +7,9 @@
   "version": "1",
   "homepage_url": "https://github.com/serj-kzv/spellcheck-dictionary-configurer",
   "browser_action": {
-    "browser_style": true
+    "browser_style": true,
+    "default_icon": "/resource/icon.png",
+    "default_title": "options of spellcheck dictionary configurer"
   },
   "content_scripts": [
     {
@@ -36,8 +38,7 @@
     "<all_urls>",
     "tabs",
     "storage",
-    "unlimitedStorage",
-    "management"
+    "unlimitedStorage"
   ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

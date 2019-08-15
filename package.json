@@ -25,7 +25,7 @@
   },
   "scripts": {
     "prod": "webpack --config webpack.config.js --mode production",
-    "prodAll": "npm run prod && cd ./opt-app",
+    "prodAll": "npm run prod && cd ./src/opt-app && npm run prod",
     "watch": "webpack --config webpack.config.js --watch --mode development",
     "build": "webpack --config webpack.config.js --mode development"
   }
