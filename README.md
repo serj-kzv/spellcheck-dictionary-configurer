@@ -1,17 +1,18 @@
 # spellcheck-dictionary-configurer
 
 # Building for a production
+Install node.js then go to the cloned project directory and run following commands
 ```
 npm install
 npm run prodAll
 ```
 
 # Dependencies updating
-```$xslt
+```
 npm update
 ```
 Look at **browserlist** that rule by polyfills
-```$xslt
+```
 npx browserslist
 ```
 Add all browser to an ignore except the latest Firefox version.
@@ -22,6 +23,9 @@ See for example about [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/G
 2. It can break a JavaScript that depends on a `lang` attribute value.
 3. `main.ts` file has a dirty hack to disable `console.debug`,
 It needs to be replaced by **angular builders** in `angular.json`
+4. Such JavaScript plugins as **CodeMirror** create many separated tags with pieces of a text inside theme.
+These pieces are not text fields that is why it is impossible to recognize theme and switch on a spell checking.
+As an example you can look at various programming code online editors.
 
 # Warning, it can break some sites and web applications
 The extension modifies attributes' values on web pages.
