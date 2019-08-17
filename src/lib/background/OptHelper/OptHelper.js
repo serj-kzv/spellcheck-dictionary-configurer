@@ -29,7 +29,7 @@ export default class OptHelper extends OptHelperBase {
     connectToContentJs(portName = 'OptHelper-cfg-port') {
         browser.runtime.onConnect.addListener(port => {
             if (port.name === portName) {
-                port.onMessage.addListener(async msg => {
+                const onMessageListener = async msg => {
                     console.debug('msg', port, msg);
                     if (msg.cmd === 'give-me-a-cfg') {
                         console.debug('OptHelper#connectToContentJs, cfg will be sent', port.sender, this.cfg);
@@ -39,7 +39,17 @@ export default class OptHelper extends OptHelperBase {
                         console.debug('OptHelper#connectToContentJs, cfg will be saved', msg.cfg);
                         await this.save(msg.cfg);
                     }
-                });
+                };
+
+                // I did not found an information in documentation if Firefox clears listeners automatically or not.
+                // That is why I clear it manually.
+                const onDisconnectListener = () => {
+                    port.onMessage.removeListener(onMessageListener);
+                    port.onDisconnect.removeListener(onDisconnectListener);
+                };
+
+                port.onMessage.addListener(onMessageListener);
+                port.onDisconnect.addListener(onDisconnectListener);
             }
         });
     }

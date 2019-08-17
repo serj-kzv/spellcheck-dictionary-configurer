@@ -13,10 +13,19 @@ class ContentJsOptHelper {
             if (this.cfg != null && !forceUpdated) {
                 resolve(this.cfg);
             } else {
-                port.onMessage.addListener(cfg => {
+                const onMessageListener = cfg => {
                     console.debug('In content script, received message from background script: ', cfg);
                     resolve(this.cfg = cfg);
-                });
+                };
+                const onDisconnectListener = () => {
+                    port.onMessage.removeListener(onMessageListener);
+                    port.onDisconnect.removeListener(onDisconnectListener);
+                };
+
+                // I did not found an information in documentation if Firefox clears listeners automatically or not.
+                // That is why I clear it manually.
+                port.onMessage.addListener(onMessageListener);
+                port.onDisconnect.addListener(onDisconnectListener);
                 console.debug('ContentJsOptHelper#read, {cmd: \'give-me-a-cfg\'}) will be sent');
                 port.postMessage({cmd: 'give-me-a-cfg'});
                 console.debug('ContentJsOptHelper#read, {cmd: \'give-me-a-cfg\'}) is sent');
