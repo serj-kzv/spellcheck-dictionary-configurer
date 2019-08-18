@@ -5,6 +5,7 @@ const proceedNode = (callback, cfg, node) => {
             const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
 
             if (shadowRoot) {
+                console.debug('proceedNode, shadowRoot', shadowRoot);
                 onNodeIsAddedFn(callback, cfg, shadowRoot);
             }
             callback(node);

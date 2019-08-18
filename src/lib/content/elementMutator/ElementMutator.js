@@ -33,11 +33,15 @@ class ElementMutator {
                 const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
 
                 if (shadowRoot) {
+                    console.debug('DOMContentLoadedListener, shadowRoot', node, shadowRoot);
                     // TODO: paste here web component is load end listener
+                    customElements.whenDefined("shadow-output").then(function(){console.debug("popup-info");});
                 }
+                // customElements.whenDefined("shadow-output").then(function(){console.debug("popup-info");});
                 processorFn(this.cfg, node);
             });
         };
+        // customElements.whenDefined("shadow-output").then(function(){alert("popup-info");});
         document.addEventListener('DOMContentLoaded', this.DOMContentLoadedListener);
 
         console.debug('ElementMutator#start is end');
