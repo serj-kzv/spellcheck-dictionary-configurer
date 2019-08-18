@@ -1,3 +1,4 @@
+import findAllElements from "../findAllElements.js";
 import isSearchableNodeFn from "./isSearchableNodeFn.js";
 
 const onNodeIsFn = (cfg, callbackFn, advancePredicate = (node, attributeName) => true) => {
@@ -14,7 +15,7 @@ const onNodeIsFn = (cfg, callbackFn, advancePredicate = (node, attributeName) =>
                     mutation.addedNodes.forEach(node => {
                         callbackFnWrapper(node);
                         if (isSearchableNodeFn(node)) {
-                            node.querySelectorAll('*').forEach(node => callbackFnWrapper(node));
+                            findAllElements('*').forEach(node => callbackFnWrapper(node));
                         }
                     });
                     break;

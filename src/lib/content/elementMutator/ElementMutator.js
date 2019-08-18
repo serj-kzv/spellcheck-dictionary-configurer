@@ -1,3 +1,4 @@
+import findAllElements from "../findAllElements.js";
 import findAndProceedFn from "./findAndProceedFn.js";
 import processorFn from "./processorFn.js";
 
@@ -28,7 +29,7 @@ class ElementMutator {
             attributeFilter
         );
         this.listener = () => {
-            document.querySelectorAll('*').forEach(node => processorFn(this.cfg, node));
+            findAllElements('*').forEach(node => processorFn(this.cfg, node));
         };
         document.addEventListener('DOMContentLoaded', this.listener);
 
