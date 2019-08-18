@@ -5,8 +5,8 @@ const findAndProceedFn = (callbackFn, attributeFilter) => {
     console.debug('findAndProceedFn, attributeFilter ', attributeFilter);
 
     return onNodeIsAddedFn(
-        {attributeFilter, childList: true, subtree: true},
-        (node, attributeName) => callbackFn(node, attributeName)
+        (node, attributeName) => callbackFn(node, attributeName),
+        {attributeFilter, childList: true, subtree: true}
     );
 };
 
