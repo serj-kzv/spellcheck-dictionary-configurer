@@ -1,25 +1,25 @@
-const onNodeIsAddedFn = (callback, cfg, root = document.documentElement) => {
+let onNodeIsAddedFn;
+const proceedNode = (callback, cfg, node) => {
+    if (node.querySelectorAll) {
+        node.querySelectorAll('*').forEach(node => {
+            const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
+
+            if (shadowRoot) {
+                onNodeIsAddedFn(callback, cfg, shadowRoot);
+            }
+            callback(node);
+        });
+    }
+};
+
+onNodeIsAddedFn = (callback, cfg, root = document.documentElement) => {
     const observer = new MutationObserver(mutations => {
         mutations.forEach(mutation => {
             switch (true) {
                 case mutation.type === 'childList': {
                     mutation.addedNodes.forEach(node => {
                         callback(node);
-                        if (node.querySelectorAll) {
-                            node.querySelectorAll('*').forEach(node => {
-                                const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
-
-                                if (shadowRoot) {
-                                    onNodeIsAddedFn(callback, cfg, shadowRoot);
-                                } else {
-                                    callback(node);
-                                }
-                            });
-                        }
-
-                        const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
-
-                        onNodeIsAddedFn(callback, cfg, shadowRoot);
+                        proceedNode(callback, cfg, node);
                     });
                     break;
                 }
@@ -32,17 +32,7 @@ const onNodeIsAddedFn = (callback, cfg, root = document.documentElement) => {
     });
 
     observer.observe(root, cfg);
-    if (root.querySelectorAll) {
-        root.querySelectorAll('*').forEach(node => {
-            const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
-
-            if (shadowRoot) {
-                onNodeIsAddedFn(callback, cfg, shadowRoot);
-            } else {
-                callback(node);
-            }
-        });
-    }
+    proceedNode(callback, cfg, root);
 
     return observer;
 };

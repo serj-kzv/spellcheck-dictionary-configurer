@@ -29,7 +29,14 @@ class ElementMutator {
             attributeFilter
         );
         this.DOMContentLoadedListener = () => {
-            findAllElements().forEach(node => processorFn(this.cfg, node));
+            findAllElements().forEach(async node => {
+                const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
+
+                if (shadowRoot) {
+                    // TODO: paste here web component is load end listener
+                }
+                processorFn(this.cfg, node);
+            });
         };
         document.addEventListener('DOMContentLoaded', this.DOMContentLoadedListener);
 
