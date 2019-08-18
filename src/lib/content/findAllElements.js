@@ -1,6 +1,8 @@
-const findAllElements = selector => {
-    let nodes = Array.from(document.querySelectorAll(selector));
-    let length = nodes.length;
+const findAllElements = () => {
+    const selector = '*';
+    let
+        nodes = Array.from(document.querySelectorAll(selector)),
+        length = nodes.length;
 
     for (let i = 0; i < length; i++) {
         const
@@ -17,7 +19,6 @@ const findAllElements = selector => {
             nodes.push(...shadowElements);
 
             // We delete some nodes that can be used inside several Custom Elements at the same time.
-            // TODO: check if it is necessary
             nodes = nodes.filter(curNode => !curNode.isSameNode(node));
 
             length = nodes.length;

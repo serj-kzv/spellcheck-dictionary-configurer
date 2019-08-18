@@ -5,8 +5,8 @@ import processorFn from "./processorFn.js";
 class ElementMutator {
     constructor(cfg) {
         this.cfg = cfg;
-        this.listener = null;
-        this.observer = null;
+        this.DOMContentLoadedListener = null;
+        this.observers = null;
         console.debug('ElementMutator is constructed', this.cfg);
     }
 
@@ -24,14 +24,14 @@ class ElementMutator {
 
         console.debug('ElementMutator#start attributeFilter', attributeFilter);
 
-        this.observer = findAndProceedFn(
+        this.observers = findAndProceedFn(
             (node, attributeName) => processorFn(this.cfg, node, attributeName),
             attributeFilter
         );
-        this.listener = () => {
-            findAllElements('*').forEach(node => processorFn(this.cfg, node));
+        this.DOMContentLoadedListener = () => {
+            findAllElements().forEach(node => processorFn(this.cfg, node));
         };
-        document.addEventListener('DOMContentLoaded', this.listener);
+        document.addEventListener('DOMContentLoaded', this.DOMContentLoadedListener);
 
         console.debug('ElementMutator#start is end');
 
@@ -40,10 +40,10 @@ class ElementMutator {
 
     stop() {
         console.debug('ElementMutator#stop is start');
-        document.removeEventListener('DOMContentLoaded', this.listener);
-        this.observer.disconnect();
-        this.listener = null;
-        this.observer = null;
+        document.removeEventListener('DOMContentLoaded', this.DOMContentLoadedListener);
+        this.observers.forEach(observer => observer.disconnect());
+        this.DOMContentLoadedListener = null;
+        this.observers = null;
         this.cfg = null;
         console.debug('ElementMutator#stop is stop', this.cfg);
 
