@@ -1,3 +1,5 @@
+import browserApi from "../../common/browserApi.js";
+
 export default class OptHelperBase {
     constructor(storageType = 'local', name = 'options') {
         console.debug('init OptHelperBase constructor');
@@ -7,7 +9,7 @@ export default class OptHelperBase {
     }
 
     static getStorageByType(storageType) {
-        console.debug('getStorageByType, browser.storage is ', browser.storage);
+        console.debug('getStorageByType, browserApi.storage is ', browserApi.storage);
         switch (true) {
             case typeof browser === 'undefined': {
                 console.debug('getStorageByType, storageType is ', storageType);
@@ -15,7 +17,7 @@ export default class OptHelperBase {
             }
             case storageType === 'local': {
                 console.debug('getStorageByType, storageType is ', storageType);
-                return browser.storage.local;
+                return browserApi.storage.local;
             }
             default : {
                 console.debug('An error in getStorageByType');

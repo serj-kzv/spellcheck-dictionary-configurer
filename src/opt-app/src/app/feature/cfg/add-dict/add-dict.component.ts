@@ -5,7 +5,7 @@ import addSpecificCfg from "../../../../../../lib/common/addSpecificCfg";
 import browserApi from "../../../../../../lib/common/browserApi";
 import findMozDictsFn from "../../../../../../lib/common/findMozDictsFn";
 import changeCfg from "../../../../../../lib/common/changeCfg";
-import {NgControl, NgForm} from "@angular/forms";
+import {NgControl} from "@angular/forms";
 
 @Component({
     selector: 'app-add-dict',

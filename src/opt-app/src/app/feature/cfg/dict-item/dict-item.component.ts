@@ -2,6 +2,7 @@ import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {CfgService} from "../../../core/service/cfg.service";
 import {NgForm} from "@angular/forms";
 import {debounceTime} from "rxjs/operators";
+import {MatSlideToggleChange} from "@angular/material";
 
 @Component({
     selector: 'app-dict-item',
@@ -29,6 +30,7 @@ export class DictItemComponent implements OnInit {
             .subscribe(formChange => {
                 console.debug('formChange', formChange);
                 this.cfgService.updCfgTxtFromCfg();
+                console.debug('cfg that will be saved is', this.cfgService.cfg);
                 this.cfgService.saveCfg();
             });
     }
@@ -38,5 +40,4 @@ export class DictItemComponent implements OnInit {
         this.cfgService.updCfgTxtFromCfg();
         this.cfgService.saveCfg();
     }
-
 }

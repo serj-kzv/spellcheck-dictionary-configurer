@@ -1,5 +1,5 @@
 import ContentJsOptHelper from "../../lib/content/ContentJsOptHelper.js";
-import ElementMutator from "../../lib/content/elementMutator/ElementMutator.js";
+import ElementMutator from "../../lib/web/elementMutator/ElementMutator.js";
 import findSpecificCfgFn from "../../lib/common/findSpecificCfgFn.js";
 
 let elementMutator;

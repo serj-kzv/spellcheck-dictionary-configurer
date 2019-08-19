@@ -1,3 +1,4 @@
+import browserApi from "../../common/browserApi.js";
 import OptHelperBase from "./OptHelperBase.js";
 
 export default class OptHelper extends OptHelperBase {
@@ -27,7 +28,7 @@ export default class OptHelper extends OptHelperBase {
     }
 
     connectToContentJs(portName = 'OptHelper-cfg-port') {
-        browser.runtime.onConnect.addListener(port => {
+        browserApi.runtime.onConnect.addListener(port => {
             if (port.name === portName) {
                 const onMessageListener = async msg => {
                     console.debug('msg', port, msg);

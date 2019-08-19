@@ -15,6 +15,7 @@ import {
     MatSelectModule,
     MatSlideToggleModule,
     MatTableModule,
+    MatTabsModule,
     MatToolbarModule,
     MatTreeModule
 } from "@angular/material";
@@ -43,6 +44,7 @@ import {
         MatTableModule,
         MatListModule,
         MatTreeModule,
+        MatTabsModule,
     ],
     exports: [
         // modules
@@ -66,6 +68,7 @@ import {
         MatTableModule,
         MatListModule,
         MatTreeModule,
+        MatTabsModule,
 
         // directives
     ]

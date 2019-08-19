@@ -41,7 +41,8 @@
                     <mat-list role="list">
                         <mat-list-item role="listitem" *ngFor="let attr of mutator.attrs">
                             <ng-container *ngIf="attr.name === 'spellcheck'; else elseSpellcheckBlock">
-                                <mat-slide-toggle [(ngModel)]="attr.value"
+                                <mat-slide-toggle [checked]="attr.value === 'true'"
+                                                  (change)="attr.value = $event.checked ? 'true' : 'false'; this.cfgService.updCfgTxtFromCfg(); this.cfgService.saveCfg();"
                                                   name="slider{{attr.name}}{{idx}}{{mutatorIdx}}">
                                     {{attr.name}}
                                 </mat-slide-toggle>

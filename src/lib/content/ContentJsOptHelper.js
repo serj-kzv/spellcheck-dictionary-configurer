@@ -1,3 +1,5 @@
+import browserApi from "../common/browserApi.js";
+
 class ContentJsOptHelper {
     constructor(portName = 'OptHelper-cfg-port') {
         this.portName = portName;
@@ -8,7 +10,7 @@ class ContentJsOptHelper {
     read(forceUpdated = false) {
         console.debug('ContentJsOptHelper#read is started');
         return new Promise(resolve => {
-            const port = browser.runtime.connect({name: this.portName});
+            const port = browserApi.runtime.connect({name: this.portName});
 
             if (this.cfg != null && !forceUpdated) {
                 resolve(this.cfg);

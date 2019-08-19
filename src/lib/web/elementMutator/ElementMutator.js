@@ -1,4 +1,3 @@
-import findAllElements from "../findAllElements.js";
 import findAndProceedFn from "./findAndProceedFn.js";
 import processorFn from "./processorFn.js";
 
@@ -24,24 +23,14 @@ class ElementMutator {
 
         console.debug('ElementMutator#start attributeFilter', attributeFilter);
 
-        this.observers = findAndProceedFn(
-            (node, attributeName) => processorFn(this.cfg, node, attributeName),
-            attributeFilter
-        );
         this.DOMContentLoadedListener = () => {
-            findAllElements().forEach(async node => {
-                const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
-
-                if (shadowRoot) {
-                    console.debug('DOMContentLoadedListener, shadowRoot', node, shadowRoot);
-                    // TODO: paste here web component is load end listener
-                    customElements.whenDefined("shadow-output").then(function(){console.debug("popup-info");});
-                }
-                // customElements.whenDefined("shadow-output").then(function(){console.debug("popup-info");});
-                processorFn(this.cfg, node);
-            });
+            console.debug('DOMContentLoadedListener, document.documentElement', document.documentElement);
+            console.debug('DOMContentLoadedListener, document.documentElement shadowRoot', Array.from(document.documentElement.querySelectorAll('*')).filter(e => e.shadowRoot));
+            this.observers = findAndProceedFn(
+                (node, attributeName) => processorFn(this.cfg, node, attributeName),
+                attributeFilter
+            );
         };
-        // customElements.whenDefined("shadow-output").then(function(){alert("popup-info");});
         document.addEventListener('DOMContentLoaded', this.DOMContentLoadedListener);
 
         console.debug('ElementMutator#start is end');

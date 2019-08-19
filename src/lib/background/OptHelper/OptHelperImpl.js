@@ -1,8 +1,9 @@
+import browserApi from "../../common/browserApi.js";
 import OptHelper from "./OptHelper.js";
 
 class OptHelperImpl extends OptHelper {
     constructor(cfgPath = 'resource/cfg.json') {
-        super('options', browser.runtime.getURL(cfgPath));
+        super('options', browserApi.runtime.getURL(cfgPath));
     }
 
     static async build() {
