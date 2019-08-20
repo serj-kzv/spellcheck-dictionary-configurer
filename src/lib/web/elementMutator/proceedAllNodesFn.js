@@ -6,7 +6,7 @@ const proceedNode = (callback, cfg, root, observers) => {
             // see https://developer.mozilla.org/en-US/docs/Web/API/Element/openOrClosedShadowRoot
             // and see as an example a page https://interactive-examples.mdn.mozilla.net/pages/tabbed/input-text.html
             // and http://jsfiddle.net/xn5u5bpk/15/
-            const shadowRoot = node.openOrCloseShadowRoot || node.shadowRoot;
+            const shadowRoot = node.openOrClosedShadowRoot || node.shadowRoot;
 
             if (shadowRoot) {
                 console.debug('proceedNode, shadowRoot', shadowRoot);

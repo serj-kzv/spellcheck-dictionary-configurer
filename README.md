@@ -3,7 +3,7 @@
 # Building for a production
 Install node.js then go to the cloned project directory and run following commands
 ```
-npm install
+npm run installAll
 npm run prodAll
 ```
 
