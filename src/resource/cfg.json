@@ -27,10 +27,6 @@
             {
               "selector": "textarea",
               "proceedInvisible": true
-            },
-            {
-              "selector": "[contenteditable=\"true\"]",
-              "proceedInvisible": true
             }
           ]
         }
