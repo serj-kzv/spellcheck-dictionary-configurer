@@ -6,6 +6,14 @@
     "elementMutatorCfg": {
       "mutators": [
         {
+          "styles": [
+            {
+              "name": "resize",
+              "value": "both",
+              "isImportant": "important",
+              "isOn": true
+            }
+          ],
           "attrs": [
             {
               "name": "spellcheck",
@@ -22,14 +30,17 @@
           "targets": [
             {
               "selector": "input",
+              "isOn": true,
               "proceedInvisible": true
             },
             {
               "selector": "textarea",
+              "isOn": true,
               "proceedInvisible": true
             },
             {
               "selector": "[contenteditable=\"true\"]",
+              "isOn": true,
               "proceedInvisible": true
             }
           ]

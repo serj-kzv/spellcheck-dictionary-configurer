@@ -39,6 +39,25 @@
                 <ng-container
                         *ngFor="let mutator of specificCfg.elementMutatorCfg.mutators; index as mutatorIdx">
                     <mat-list role="list">
+                        <mat-list-item role="listitem" *ngFor="let style of mutator.styles">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>{{style.name}}</mat-label>
+                                <input [(ngModel)]="style.value" matInput placeholder="attr.name"
+                                       name="style{{style.name}}{{idx}}{{mutatorIdx}}">
+                            </mat-form-field>
+                            <mat-slide-toggle [checked]="style.isImportant === 'important'"
+                                              (change)="style.isImportant = $event.checked ? 'important' : ''; this.cfgService.updCfgTxtFromCfg(); this.cfgService.saveCfg();"
+                                              name="slider_isImportant{{style.name}}{{idx}}{{mutatorIdx}}">
+                                is important
+                            </mat-slide-toggle>
+                            &nbsp;&nbsp;&nbsp;
+                            <mat-slide-toggle [(ngModel)]="style.isOn"
+                                              name="slider_isOn{{style.name}}{{idx}}{{mutatorIdx}}">
+                                is on
+                            </mat-slide-toggle>
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list role="list">
                         <mat-list-item role="listitem" *ngFor="let attr of mutator.attrs">
                             <ng-container *ngIf="attr.name === 'spellcheck'; else elseSpellcheckBlock">
                                 <mat-slide-toggle [checked]="attr.value === 'true'"
@@ -61,9 +80,15 @@
                             <mat-form-field style="width: 100%;">
                                 <mat-label>Target selector</mat-label>
                                 <input [(ngModel)]="target.selector" matInput
+                                       [readonly]="true"
                                        placeholder="target.selector"
                                        name="target{{target.selector}}{{idx}}{{mutatorIdx}}">
                             </mat-form-field>
+                            <mat-slide-toggle [(ngModel)]="target.isOn"
+                                              name="isOn{{target.selector}}{{idx}}{{mutatorIdx}}">
+                                is on
+                            </mat-slide-toggle>
+                            &nbsp;&nbsp;&nbsp;
                             <mat-slide-toggle [(ngModel)]="target.proceedInvisible"
                                               name="proceedInvisible{{target.selector}}{{idx}}{{mutatorIdx}}">
                                 Proceed invisible

@@ -23,7 +23,11 @@ const start = async () => {
     console.debug('app#start specificCfg', specificCfg);
 
     if (specificCfg.isOn) {
-        elementMutator = new ElementMutator(specificCfg.elementMutatorCfg).start();
+        try {
+            elementMutator = await new ElementMutator(specificCfg.elementMutatorCfg).start();
+        } catch (e) {
+            console.debug(e);
+        }
     } else {
         stop();
     }
