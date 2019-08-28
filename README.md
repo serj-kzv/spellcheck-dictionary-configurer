@@ -8,8 +8,9 @@ npm run prodAll
 ```
 
 # Dependencies updating
+After updating install all needed dependencies from a console output if needed.
 ```
-npm update
+npm run updateAll
 ```
 Look at **browserlist** that rule by polyfills
 ```

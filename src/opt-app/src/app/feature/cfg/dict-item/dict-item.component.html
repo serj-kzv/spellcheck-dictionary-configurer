@@ -36,64 +36,101 @@
                         </mat-form-field>
                     </mat-list-item>
                 </mat-list>
-                <ng-container
-                        *ngFor="let mutator of specificCfg.elementMutatorCfg.mutators; index as mutatorIdx">
+                <ng-container *ngFor="let mutator of specificCfg.elementMutatorCfg.mutators; index as mutatorIdx">
+                    <h3>Rule configuration (mutator) number {{mutatorIdx + 1}}</h3>
                     <mat-list role="list">
-                        <mat-list-item role="listitem" *ngFor="let style of mutator.styles">
+                        <mat-list-item role="listitem" *ngFor="let style of mutator.styles; index as styleIdx">
                             <mat-form-field style="width: 100%;">
                                 <mat-label>{{style.name}}</mat-label>
-                                <input [(ngModel)]="style.value" matInput placeholder="attr.name"
-                                       name="style{{style.name}}{{idx}}{{mutatorIdx}}">
+                                <input [(ngModel)]="style.value" matInput placeholder="name"
+                                       name="styleValue{{idx}}{{mutatorIdx}}{{styleIdx}}">
                             </mat-form-field>
                             <mat-slide-toggle [checked]="style.isImportant === 'important'"
                                               (change)="style.isImportant = $event.checked ? 'important' : ''; this.cfgService.updCfgTxtFromCfg(); this.cfgService.saveCfg();"
-                                              name="slider_isImportant{{style.name}}{{idx}}{{mutatorIdx}}">
+                                              name="styleIsImportant{{idx}}{{mutatorIdx}}{{styleIdx}}">
                                 is important
                             </mat-slide-toggle>
                             &nbsp;&nbsp;&nbsp;
                             <mat-slide-toggle [(ngModel)]="style.isOn"
-                                              name="slider_isOn{{style.name}}{{idx}}{{mutatorIdx}}">
+                                              name="styleIsOn{{idx}}{{mutatorIdx}}{{styleIdx}}">
                                 is on
                             </mat-slide-toggle>
                         </mat-list-item>
                     </mat-list>
                     <mat-list role="list">
-                        <mat-list-item role="listitem" *ngFor="let attr of mutator.attrs">
+                        <mat-list-item role="listitem" *ngFor="let attr of mutator.attrs; index as attrIdx">
                             <ng-container *ngIf="attr.name === 'spellcheck'; else elseSpellcheckBlock">
                                 <mat-slide-toggle [checked]="attr.value === 'true'"
                                                   (change)="attr.value = $event.checked ? 'true' : 'false'; this.cfgService.updCfgTxtFromCfg(); this.cfgService.saveCfg();"
-                                                  name="slider{{attr.name}}{{idx}}{{mutatorIdx}}">
+                                                  name="attrSpellcheckIsOn{{idx}}{{mutatorIdx}}{{attrIdx}}">
                                     {{attr.name}}
                                 </mat-slide-toggle>
                             </ng-container>
                             <ng-template #elseSpellcheckBlock>
                                 <mat-form-field style="width: 100%;">
                                     <mat-label>{{attr.name}}</mat-label>
-                                    <input [(ngModel)]="attr.value" matInput placeholder="attr.name"
-                                           name="attr{{attr.name}}{{idx}}{{mutatorIdx}}">
+                                    <input [(ngModel)]="attr.value" matInput
+                                           name="attrValue{{idx}}{{mutatorIdx}}{{attrIdx}}">
                                 </mat-form-field>
                             </ng-template>
                         </mat-list-item>
                     </mat-list>
                     <mat-list role="list">
-                        <mat-list-item role="listitem" *ngFor="let target of mutator.targets">
-                            <mat-form-field style="width: 100%;">
-                                <mat-label>Target selector</mat-label>
-                                <input [(ngModel)]="target.selector" matInput
-                                       [readonly]="true"
-                                       placeholder="target.selector"
-                                       name="target{{target.selector}}{{idx}}{{mutatorIdx}}">
-                            </mat-form-field>
-                            <mat-slide-toggle [(ngModel)]="target.isOn"
-                                              name="isOn{{target.selector}}{{idx}}{{mutatorIdx}}">
-                                is on
-                            </mat-slide-toggle>
-                            &nbsp;&nbsp;&nbsp;
-                            <mat-slide-toggle [(ngModel)]="target.proceedInvisible"
-                                              name="proceedInvisible{{target.selector}}{{idx}}{{mutatorIdx}}">
-                                Proceed invisible
-                            </mat-slide-toggle>
-                        </mat-list-item>
+                        <ng-container *ngFor="let target of mutator.targets; index as targetIdx">
+                            <h3>Rule target configuration number {{targetIdx + 1}}</h3>
+                            <!-- Mutator cfg -->
+                            <mat-list-item role="listitem">
+                                <mat-slide-toggle [(ngModel)]="target.isOn"
+                                                  name="targetIsOn{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                    On
+                                </mat-slide-toggle>
+                                &nbsp;&nbsp;&nbsp;
+                                <mat-slide-toggle [(ngModel)]="target.proceedInvisible"
+                                                  name="targetProceedInvisible{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                    Proceed invisible
+                                </mat-slide-toggle>
+                            </mat-list-item>
+                            <!-- Selector cfg -->
+                            <mat-list-item *ngIf="target.selector" role="listitem">
+                                <mat-form-field style="width: 100%;">
+                                    <mat-label>Target selector</mat-label>
+                                    <input [(ngModel)]="target.selector.name" matInput
+                                           placeholder="selector"
+                                           name="targetSelectorName{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                </mat-form-field>
+                                &nbsp;&nbsp;&nbsp;
+                                <mat-slide-toggle [(ngModel)]="target.selector.isOn"
+                                                  name="targetSelectorIsOn{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                    selector is on
+                                </mat-slide-toggle>
+                                &nbsp;&nbsp;&nbsp;
+                                <mat-slide-toggle *ngIf="target.selector.isSmartAlgorithm !== undefined"
+                                                  [(ngModel)]="target.selector.isSmartAlgorithm"
+                                                  name="targetSelectorIsSmartAlgorithm{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                    smart algorithm (slower)
+                                </mat-slide-toggle>
+                            </mat-list-item>
+                            <!-- Interface cfg -->
+                            <mat-list-item *ngIf="target.byInterface" role="listitem">
+                                <mat-form-field style="width: 100%;">
+                                    <mat-label>Target interface name</mat-label>
+                                    <input [(ngModel)]="target.byInterface.name" matInput
+                                           name="targetByInterfaceName{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                </mat-form-field>
+                                &nbsp;&nbsp;&nbsp;
+                                <mat-slide-toggle [(ngModel)]="target.byInterface.isOn"
+                                                  name="targetByInterfaceIsOn{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                    interface is on
+                                </mat-slide-toggle>
+                                &nbsp;&nbsp;&nbsp;
+                                <mat-slide-toggle
+                                        *ngIf="target.byInterface.notOnlyInstanceOfButAlsoName !== undefined"
+                                        [(ngModel)]="target.byInterface.notOnlyInstanceOfButAlsoName"
+                                        name="targetNotOnlyInstanceOfButAlsoName{{idx}}{{mutatorIdx}}{{targetIdx}}">
+                                    use class name
+                                </mat-slide-toggle>
+                            </mat-list-item>
+                        </ng-container>
                     </mat-list>
                 </ng-container>
             </mat-action-row>

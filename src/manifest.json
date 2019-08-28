@@ -4,7 +4,7 @@
   "description": "spellcheck dictionary configurer",
   "short_name": "spellcheck dictionary configurer",
   "author": "serj-kzv",
-  "version": "3",
+  "version": "4",
   "homepage_url": "https://github.com/serj-kzv/spellcheck-dictionary-configurer",
   "browser_action": {
     "browser_style": true,

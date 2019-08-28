@@ -29,17 +29,39 @@
           ],
           "targets": [
             {
-              "selector": "input",
+              "selector": {
+                "isOn": false,
+                "name": "input",
+                "isSmartAlgorithm": false
+              },
+              "byInterface": {
+                "isOn": true,
+                "name": "HTMLInputElement",
+                "notOnlyInstanceOfButAlsoName": false
+              },
               "isOn": true,
               "proceedInvisible": true
             },
             {
-              "selector": "textarea",
+              "selector": {
+                "isOn": false,
+                "name": "textarea",
+                "isSmartAlgorithm": false
+              },
+              "byInterface": {
+                "isOn": true,
+                "name": "HTMLTextAreaElement",
+                "notOnlyInstanceOfButAlsoName": false
+              },
               "isOn": true,
               "proceedInvisible": true
             },
             {
-              "selector": "[contenteditable=\"true\"]",
+              "selector": {
+                "isOn": true,
+                "name": "[contenteditable=\"true\"]",
+                "isSmartAlgorithm": false
+              },
               "isOn": true,
               "proceedInvisible": true
             }

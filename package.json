@@ -17,13 +17,14 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "terser-webpack-plugin": "^1.4.1",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   },
   "dependencies": {
     "lodash.clonedeep": "^4.5.0"
   },
   "scripts": {
+    "updateAll": "npm update && cd ./src/opt-app && ng update --all --allowDirty --force --verbose && cd ../",
     "installAll": "npm install && cd ./src/opt-app && npm install && cd ../",
     "prod": "webpack --config webpack.config.js --mode production",
     "prodAll": "npm run prod && cd ./src/opt-app && npm run prod && cd ../",

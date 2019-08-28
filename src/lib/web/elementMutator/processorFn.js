@@ -22,8 +22,43 @@ const processNodesFn = (mutator, node) => {
 };
 const processorFn = async (cfg, node, attributeName) => {
     cfg.mutators.forEach(mutator => {
-        const isProceedable = mutator.targets.some(target =>
-            node.matches(target.selector) && target.isOn && (target.proceedInvisible || isVisibleNodeFn(node)));
+        const isProceedable = mutator.targets.some(target => {
+            if (target['isOn'] && (target['proceedInvisible'] || isVisibleNodeFn(node))) {
+                const targetSelector = target['selector'];
+
+                if (targetSelector && targetSelector['isOn']) {
+                    const targetSelectorName = targetSelector['name'];
+
+                    if (node.matches(targetSelectorName)) {
+                        return true;
+                    } else if (targetSelector['isSmartAlgorithm']) {
+                        // The "smart algorithm creates a node by the selector, gets its interface
+                        // and use the interface to compares
+                        try {
+                            const targetSelectorNodeInterface = document.createElement(targetSelectorName).constructor;
+
+                            // NOTE: maybe there is not need to compare names
+                            return node instanceof targetSelectorNodeInterface
+                                || targetSelectorNodeInterface.name === node.constructor.name;
+                        } catch (e) {
+                            console.debug('can not create a node by selector', targetSelector);
+                        }
+                    }
+                } else {
+                    const targetByInterface = target['byInterface'];
+
+                    if (targetByInterface && targetByInterface['isOn']) {
+                        const targetInterfaceName = targetByInterface['name'];
+
+                        // here we compare names because there is a case when there is a class with the same name
+                        // NOTE: maybe there is not need to compare names
+                        return node instanceof window[targetInterfaceName] ||
+                            (targetByInterface['notOnlyInstanceOfButAlsoName']
+                                && targetInterfaceName === node.constructor.name);
+                    }
+                }
+            }
+        });
 
         if (isProceedable) {
             // console.debug('processorFn, the node is a isProceedable node');

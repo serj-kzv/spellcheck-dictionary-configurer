@@ -1,5 +1,6 @@
 interface MutatorTarget {
-    selector: string;
+    selector: MutatorTargetSelector;
+    byInterface: MutatorTargetByInterface;
     isOn: boolean;
     proceedInvisible: boolean;
 }
