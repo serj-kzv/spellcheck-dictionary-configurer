@@ -53,6 +53,7 @@ class ElementMutator {
                 ));
             };
             if (!this.isStarted) {
+                // console.debug('document.readyState', document.readyState);
                 if (startWhenIsFullyLoaded) {
                     if (document.readyState === 'complete') {
                         this.startProcessingFn();

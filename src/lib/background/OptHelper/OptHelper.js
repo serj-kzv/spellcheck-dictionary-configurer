@@ -34,10 +34,12 @@ export default class OptHelper extends OptHelperBase {
                     console.debug('msg', port, msg);
                     if (msg.cmd === 'give-me-a-cfg') {
                         console.debug('OptHelper#connectToContentJs, cfg will be sent', port.sender, this.cfg);
+                        this.cfg.requester = port.sender; // NOTE: for debug purposes
                         port.postMessage(this.cfg);
                     }
                     if (msg.cmd === 'upd-the-cfg') {
                         console.debug('OptHelper#connectToContentJs, cfg will be saved', msg.cfg);
+                        delete msg.cfg.requester; // NOTE: requester for debug purposes
                         await this.save(msg.cfg);
                     }
                 };
