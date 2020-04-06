@@ -27,6 +27,7 @@ It needs to be replaced by **angular builders** in `angular.json`
 4. Such JavaScript plugins as **CodeMirror** create many separated tags with pieces of a text inside them.
 These pieces are not text fields that is why it is impossible to recognize them and switch on a spell checking.
 As an example you can look at various programming code online editors.
+5. Sometimes if there are local site iframes which does not load from remote sites it can happen that the script does not work for such iframes. It is possible to fix it because it is just a bug. I investigate it.
 
 # Warning, it can break some sites and web applications
 The extension modifies attributes' values on web pages.
